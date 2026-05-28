@@ -1,15 +1,15 @@
 [
   {
-    "strName" : "ItmChargerBattDrill01",
-    "strNameShort" : "Зарядное Устройство",
-    "strNameFriendly" : "Зарядное Устройство: Gott",
-    "strItemDef" : "ItmChargerBattDrill01",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
+    "strName": "ItmChargerBattDrill01",
+    "strNameShort": "Зарядное Устройство",
+    "strNameFriendly": "Зарядное Устройство: Gott",
+    "strItemDef": "ItmChargerBattDrill01",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [
       "Inventory"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsGott=1.0x1",
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
@@ -19,7 +19,7 @@
       "IsSolid=1.0x1.0",
       "IsReadyHeat=1.0x1",
       "StatHeatArea=1.0x0.5",
-      "StatHeatVol=1.0x0.02", 
+      "StatHeatVol=1.0x0.02",
       "StatSolidTemp=1.0x310",
       "StatBasePrice=1.0x25.99",
       "StatDismantleProgressMax=1.0x220",
@@ -31,44 +31,45 @@
       "IsCategoryElectronics=1.0x1",
       "IsSignalable=1.0x1"
     ],
-    "strContainerCT"    : "TIsFitContainerDrill01Battery",
-    "nContainerHeight"   : 1,
-    "nContainerWidth"   : 1,
-    "mapAltItemDefs"  : [
-      "IsBatteryDrill01","ItmChargerBattDrill01Full"
+    "strContainerCT": "TIsFitContainerDrill01Battery",
+    "nContainerHeight": 1,
+    "nContainerWidth": 1,
+    "mapAltItemDefs": [
+      "IsBatteryDrill01",
+      "ItmChargerBattDrill01Full"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,-16",
       "PowerSource,0,16"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Heater,TIsAirtightNoHuman",
       "Destructable,StatDamage,ACTChargerBattDrill01Damage,StatDamageMax,1.0",
       "Electrical,Electrical"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Panel A",
       "HeaterItemGeneric",
       "Electrical"
     ],
-    "aTickers" : [ 
+    "aTickers": [
       "Power"
     ],
-    "strPortraitImg"  : "ItmChargerBattDrill01",
-    "jsonPI"            : "ChargerDrill01",
+    "strPortraitImg": "ItmChargerBattDrill01",
+    "jsonPI": "ChargerDrill01",
     "strAudioEmitter": "ItmChargerBattEVASound"
   },
   {
-    "strName" : "ItmChargerBattDrill01Dmg",
-    "strNameShort" : "Зарядное устройство",
-    "strNameFriendly" : "Зарядное устройство: Gott (Damaged)",
-    "strItemDef" : "ItmChargerBattDrill01Dmg",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
+    "strName": "ItmChargerBattDrill01Dmg",
+    "strNameShort": "Зарядное устройство",
+    "strNameFriendly": "Зарядное устройство: Gott (Damaged)",
+    "strItemDef": "ItmChargerBattDrill01Dmg",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [
       "Inventory"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsDamaged=1.0x1",
       "IsGott=1.0x1",
       "IsHiddenInv=1.0x1",
@@ -85,32 +86,33 @@
       "IsTechnology=1.0x1",
       "IsCategoryElectronics=1.0x1"
     ],
-    "strContainerCT"    : "TIsFitContainerDrill01Battery",
-    "nContainerHeight"   : 1,
-    "nContainerWidth"   : 1,
-    "mapAltItemDefs"  : [
-      "IsBatteryDrill01","ItmChargerBattDrill01FullDmg"
+    "strContainerCT": "TIsFitContainerDrill01Battery",
+    "nContainerHeight": 1,
+    "nContainerWidth": 1,
+    "mapAltItemDefs": [
+      "IsBatteryDrill01",
+      "ItmChargerBattDrill01FullDmg"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,-16"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTChargerBattDrill01Destroy,StatDamageMax,1.0"
     ],
-    "strPortraitImg"  : "ItmChargerBattDrill01Dmg02"
+    "strPortraitImg": "ItmChargerBattDrill01Dmg02"
   },
   {
-    "strName" : "ItmChargerBattDrill01DmgLoose",
-    "strNameShort" : "Зарядное устройство",
-    "strNameFriendly" : "Зарядное устройство: Gott (Не Закреплено, Повреждено)",
-    "strItemDef" : "ItmChargerBattDrill01DmgLoose",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmChargerBattDrill01DmgLoose",
+    "strNameShort": "Зарядное устройство",
+    "strNameFriendly": "Зарядное устройство: Gott (Не Закреплено, Повреждено)",
+    "strItemDef": "ItmChargerBattDrill01DmgLoose",
+    "strType": "Item",
+    "aInteractions": [
       "Inventory",
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsDamaged=1.0x1",
       "IsGott=1.0x1",
       "IsChargerDrill01=1.0x1",
@@ -124,35 +126,38 @@
       "IsTechnology=1.0x1",
       "IsCategoryElectronics=1.0x1"
     ],
-    "strContainerCT"    : "TIsFitContainerDrill01Battery",
-    "nContainerHeight"   : 1,
-    "nContainerWidth"   : 1,
-    "mapAltItemDefs"  : [
-      "IsBatteryDrill01","ItmChargerBattDrill01FullDmgLoose"
+    "strContainerCT": "TIsFitContainerDrill01Battery",
+    "nContainerHeight": 1,
+    "nContainerWidth": 1,
+    "mapAltItemDefs": [
+      "IsBatteryDrill01",
+      "ItmChargerBattDrill01FullDmgLoose"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,-16"
     ],
-    "mapSlotEffects" : [
-      "heldL","HeldItmDefaultL",
-      "heldR","HeldItmDefaultR"
+    "mapSlotEffects": [
+      "heldL",
+      "HeldItmDefaultL",
+      "heldR",
+      "HeldItmDefaultR"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTChargerBattDrill01LooseDestroy,StatDamageMax,1.0"
     ],
-    "strPortraitImg"  : "ItmChargerBattDrill01Dmg02Loose"
+    "strPortraitImg": "ItmChargerBattDrill01Dmg02Loose"
   },
   {
-    "strName" : "ItmChargerBattDrill01Off",
-    "strNameShort" : "Зарядное устройство",
-    "strNameFriendly" : "Зарядное устройство: Gott (Выкл.)",
-    "strItemDef" : "ItmChargerBattDrill01Off",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
+    "strName": "ItmChargerBattDrill01Off",
+    "strNameShort": "Зарядное устройство",
+    "strNameFriendly": "Зарядное устройство: Gott (Выкл.)",
+    "strItemDef": "ItmChargerBattDrill01Off",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [
       "Inventory"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsGott=1.0x1",
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
@@ -169,41 +174,42 @@
       "IsCategoryElectronics=1.0x1",
       "IsSignalable=1.0x1"
     ],
-    "strContainerCT"    : "TIsFitContainerDrill01Battery",
-    "nContainerHeight"   : 1,
-    "nContainerWidth"   : 1,
-    "mapAltItemDefs"  : [
-      "IsBatteryDrill01","ItmChargerBattDrill01FullOff"
+    "strContainerCT": "TIsFitContainerDrill01Battery",
+    "nContainerHeight": 1,
+    "nContainerWidth": 1,
+    "mapAltItemDefs": [
+      "IsBatteryDrill01",
+      "ItmChargerBattDrill01FullOff"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,-16",
       "PowerSource,0,16"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTChargerBattDrill01Damage,StatDamageMax,1.0",
       "Electrical,Electrical"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Electrical"
     ],
-    "aTickers" : [ 
+    "aTickers": [
       "Power"
     ],
-    "strPortraitImg"  : "ItmChargerBattDrill01",
-    "jsonPI"            : "ChargerDrill01"
+    "strPortraitImg": "ItmChargerBattDrill01",
+    "jsonPI": "ChargerDrill01"
   },
   {
-    "strName" : "ItmChargerBattDrill01OffLoose",
-    "strNameShort" : "Зарядное устройство",
-    "strNameFriendly" : "Зарядное устройство: Gott (Не Закреплено)",
-    "strItemDef" : "ItmChargerBattDrill01OffLoose",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmChargerBattDrill01OffLoose",
+    "strNameShort": "Зарядное устройство",
+    "strNameFriendly": "Зарядное устройство: Gott (Не Закреплено)",
+    "strItemDef": "ItmChargerBattDrill01OffLoose",
+    "strType": "Item",
+    "aInteractions": [
       "Inventory",
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsGott=1.0x1",
       "IsChargerDrill01=1.0x1",
       "IsOff=1.0x1",
@@ -216,36 +222,38 @@
       "IsTechnology=1.0x1",
       "IsCategoryElectronics=1.0x1"
     ],
-    "strContainerCT"    : "TIsFitContainerDrill01Battery",
-    "nContainerHeight"   : 1,
-    "nContainerWidth"   : 1,
-    "mapAltItemDefs"  : [
-      "IsBatteryDrill01","ItmChargerBattDrill01FullOffLoose"
+    "strContainerCT": "TIsFitContainerDrill01Battery",
+    "nContainerHeight": 1,
+    "nContainerWidth": 1,
+    "mapAltItemDefs": [
+      "IsBatteryDrill01",
+      "ItmChargerBattDrill01FullOffLoose"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,-16"
     ],
-    "mapSlotEffects" : [
-      "heldL","HeldItmDefaultL",
-      "heldR","HeldItmDefaultR"
+    "mapSlotEffects": [
+      "heldL",
+      "HeldItmDefaultL",
+      "heldR",
+      "HeldItmDefaultR"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTChargerBattDrill01LooseDamage,StatDamageMax,1.0"
     ],
-    "strPortraitImg"  : "ItmChargerBattDrill01Loose"
+    "strPortraitImg": "ItmChargerBattDrill01Loose"
   },
-
   {
-    "strName" : "ItmChargerBattEVA",
-    "strNameShort" : "Зарядное Устройство",
-    "strNameFriendly" : "Зарядное устройство: Bingham-12 EVA",
-    "strItemDef" : "ItmChargerBattEVA",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
+    "strName": "ItmChargerBattEVA",
+    "strNameShort": "Зарядное Устройство",
+    "strNameFriendly": "Зарядное устройство: Bingham-12 EVA",
+    "strItemDef": "ItmChargerBattEVA",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [
       "Inventory"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsBingham=1.0x1",
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
@@ -256,7 +264,7 @@
       "IsSolid=1.0x1.0",
       "IsReadyHeat=1.0x1",
       "StatHeatArea=1.0x0.5",
-      "StatHeatVol=1.0x0.05", 
+      "StatHeatVol=1.0x0.05",
       "StatSolidTemp=1.0x310",
       "StatBasePrice=1.0x786.0",
       "StatDismantleProgressMax=1.0x220",
@@ -268,46 +276,47 @@
       "IsCategoryElectronics=1.0x1",
       "IsSignalable=1.0x1"
     ],
-    "strContainerCT"    : "TIsFitContainerEVABattery",
-    "nContainerHeight"   : 2,
-    "nContainerWidth"   : 4,
-    "mapAltItemDefs"  : [
-      "IsBatteryEVA","ItmChargerBattEVAFull"
+    "strContainerCT": "TIsFitContainerEVABattery",
+    "nContainerHeight": 2,
+    "nContainerWidth": 4,
+    "mapAltItemDefs": [
+      "IsBatteryEVA",
+      "ItmChargerBattEVAFull"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,-24",
       "PowerA,8,24",
       "PowerB,-8,24"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Heater,TIsAirtightNoHuman",
       "Destructable,StatDamage,ACTChargerBattEVADamage,StatDamageMax,1.0",
       "Electrical,Electrical"
     ],
-    "mapGUIPropMaps"  : [      
+    "mapGUIPropMaps": [
       "Panel A",
       "HeaterItemGeneric",
       "Electrical"
     ],
-    "aTickers" : [ 
+    "aTickers": [
       "Power"
     ],
-    "strPortraitImg"  : "ItmChargerBattEVA",
-    "jsonPI"            : "ChargerEVA",
+    "strPortraitImg": "ItmChargerBattEVA",
+    "jsonPI": "ChargerEVA",
     "strAudioEmitter": "ItmChargerBattEVASound"
   },
   {
-    "strName" : "ItmChargerBattEVAOffLoose",
-    "strNameShort" : "Зарядное устройство",
-    "strNameFriendly" : "Зарядное устройство: Bingham-12 EVA (Не Закреплено)",
-    "strItemDef" : "ItmChargerBattEVAOffLoose",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmChargerBattEVAOffLoose",
+    "strNameShort": "Зарядное устройство",
+    "strNameFriendly": "Зарядное устройство: Bingham-12 EVA (Не Закреплено)",
+    "strItemDef": "ItmChargerBattEVAOffLoose",
+    "strType": "Item",
+    "aInteractions": [
       "Inventory",
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsBingham=1.0x1",
       "IsChargerEVA=1.0x1",
       "IsOff=1.0x1",
@@ -322,34 +331,36 @@
       "IsTechnology=1.0x1",
       "IsCategoryElectronics=1.0x1"
     ],
-    "strContainerCT"    : "TIsFitContainerEVABattery",
-    "nContainerHeight"   : 2,
-    "nContainerWidth"   : 4,
-    "mapAltItemDefs"  : [
-      "IsBatteryEVA","ItmChargerBattEVAFullOffLoose"
+    "strContainerCT": "TIsFitContainerEVABattery",
+    "nContainerHeight": 2,
+    "nContainerWidth": 4,
+    "mapAltItemDefs": [
+      "IsBatteryEVA",
+      "ItmChargerBattEVAFullOffLoose"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,-24"
     ],
-    "mapSlotEffects" : [    
-      "drag", "Blank"
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTChargerBattEVALooseDamage,StatDamageMax,1.0"
     ],
-    "strPortraitImg"  : "ItmChargerBattEVALoose"
+    "strPortraitImg": "ItmChargerBattEVALoose"
   },
   {
-    "strName" : "ItmChargerBattEVAOff",
-    "strNameShort" : "Зарядное устройство",
-    "strNameFriendly" : "Зарядное устройство: Bingham-12 EVA (Выкл.)",
-    "strItemDef" : "ItmChargerBattEVAOff",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
+    "strName": "ItmChargerBattEVAOff",
+    "strNameShort": "Зарядное устройство",
+    "strNameFriendly": "Зарядное устройство: Bingham-12 EVA (Выкл.)",
+    "strItemDef": "ItmChargerBattEVAOff",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [
       "Inventory"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsBingham=1.0x1",
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
@@ -367,43 +378,44 @@
       "IsCategoryElectronics=1.0x1",
       "IsSignalable=1.0x1"
     ],
-    "strContainerCT"    : "TIsFitContainerEVABattery",
-    "nContainerHeight"   : 2,
-    "nContainerWidth"   : 4,
-    "mapAltItemDefs"  : [
-      "IsBatteryEVA","ItmChargerBattEVAFullOff"
+    "strContainerCT": "TIsFitContainerEVABattery",
+    "nContainerHeight": 2,
+    "nContainerWidth": 4,
+    "mapAltItemDefs": [
+      "IsBatteryEVA",
+      "ItmChargerBattEVAFullOff"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,-24",
       "PowerA,8,24",
       "PowerB,-8,24"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTChargerBattEVADamage,StatDamageMax,1.0",
       "Electrical,Electrical"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Electrical"
     ],
-    "aTickers" : [ 
+    "aTickers": [
       "Power"
     ],
-    "strPortraitImg"  : "ItmChargerBattEVA",
-    "jsonPI"            : "ChargerEVA",
+    "strPortraitImg": "ItmChargerBattEVA",
+    "jsonPI": "ChargerEVA",
     "strAudioEmitter": "ItmChargerBattEVASound"
   },
   {
-    "strName" : "ItmChargerBattEVADmgLoose",
-    "strNameShort" : "Зарядное устройство",
-    "strNameFriendly" : "Зарядное устройство: Bingham-12 EVA (Не Закреплено, Повреждено)",
-    "strItemDef" : "ItmChargerBattEVADmgLoose",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmChargerBattEVADmgLoose",
+    "strNameShort": "Зарядное устройство",
+    "strNameFriendly": "Зарядное устройство: Bingham-12 EVA (Не Закреплено, Повреждено)",
+    "strItemDef": "ItmChargerBattEVADmgLoose",
+    "strType": "Item",
+    "aInteractions": [
       "Inventory",
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsBingham=1.0x1",
       "IsChargerEVA=1.0x1",
       "IsDamaged=1.0x1",
@@ -418,36 +430,40 @@
       "IsTechnology=1.0x1",
       "IsCategoryElectronics=1.0x1"
     ],
-    "strContainerCT"    : "TIsFitContainerEVABattery",
-    "nContainerHeight"   : 2,
-    "nContainerWidth"   : 4,
-    "mapAltItemDefs"  : [
-      "IsBatteryEVA","ItmChargerBattEVAFullDmgLoose"
+    "strContainerCT": "TIsFitContainerEVABattery",
+    "nContainerHeight": 2,
+    "nContainerWidth": 4,
+    "mapAltItemDefs": [
+      "IsBatteryEVA",
+      "ItmChargerBattEVAFullDmgLoose"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,-24"
     ],
-    "mapSlotEffects" : [
-      "heldL","HeldItmDefaultL",
-      "heldR","HeldItmDefaultR",
-      "drag", "Blank"
+    "mapSlotEffects": [
+      "heldL",
+      "HeldItmDefaultL",
+      "heldR",
+      "HeldItmDefaultR",
+      "drag",
+      "Blank"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTChargerBattEVALooseDestroy,StatDamageMax,1.0"
     ],
-    "strPortraitImg"  : "ItmChargerBattEVADmg02Loose"
+    "strPortraitImg": "ItmChargerBattEVADmg02Loose"
   },
   {
-    "strName" : "ItmChargerBattEVADmg",
-    "strNameShort" : "Зарядное устройство",
-    "strNameFriendly" : "Зарядное устройство: Bingham-12 EVA (Выкл)",
-    "strItemDef" : "ItmChargerBattEVADmg",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
+    "strName": "ItmChargerBattEVADmg",
+    "strNameShort": "Зарядное устройство",
+    "strNameFriendly": "Зарядное устройство: Bingham-12 EVA (Выкл)",
+    "strItemDef": "ItmChargerBattEVADmg",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [
       "Inventory"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsBingham=1.0x1",
       "IsDamaged=1.0x1",
       "IsHiddenInv=1.0x1",
@@ -464,34 +480,33 @@
       "IsTechnology=1.0x1",
       "IsCategoryElectronics=1.0x1"
     ],
-    "strContainerCT"    : "TIsFitContainerEVABattery",
-    "nContainerHeight"   : 2,
-    "nContainerWidth"   : 4,
-    "mapAltItemDefs"  : [
-      "IsBatteryEVA","ItmChargerBattEVAFullDmg"
+    "strContainerCT": "TIsFitContainerEVABattery",
+    "nContainerHeight": 2,
+    "nContainerWidth": 4,
+    "mapAltItemDefs": [
+      "IsBatteryEVA",
+      "ItmChargerBattEVAFullDmg"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,-24"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTChargerBattEVADestroy,StatDamageMax,1.0"
     ],
-    "aTickers" : [ 
-    ],
-    "strPortraitImg"  : "ItmChargerBattEVADmg02"
+    "aTickers": [],
+    "strPortraitImg": "ItmChargerBattEVADmg02"
   },
-
   {
-    "strName" : "ItmChargerBattery04",
-    "strNameShort" : "Зарядное устройство",
-    "strNameFriendly" : "Зарядное устройство: Weber Laser",
-    "strItemDef" : "ItmChargerBattery04",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
+    "strName": "ItmChargerBattery04",
+    "strNameShort": "Зарядное устройство",
+    "strNameFriendly": "Зарядное устройство: Weber Laser",
+    "strItemDef": "ItmChargerBattery04",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [
       "Inventory"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsWeber=1.0x1",
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
@@ -501,7 +516,7 @@
       "IsSolid=1.0x1.0",
       "IsReadyHeat=1.0x1",
       "StatHeatArea=1.0x0.5",
-      "StatHeatVol=1.0x0.05", 
+      "StatHeatVol=1.0x0.05",
       "StatSolidTemp=1.0x310",
       "StatBasePrice=1.0x786.0",
       "StatDismantleProgressMax=1.0x220",
@@ -513,44 +528,45 @@
       "IsCategoryElectronics=1.0x1",
       "IsSignalable=1.0x1"
     ],
-    "strContainerCT"    : "TIsFitContainerBattery04",
-    "nContainerHeight"   : 1,
-    "nContainerWidth"   : 1,
-    "mapAltItemDefs"  : [
-      "IsBattery04","ItmChargerBattery04Full"
+    "strContainerCT": "TIsFitContainerBattery04",
+    "nContainerHeight": 1,
+    "nContainerWidth": 1,
+    "mapAltItemDefs": [
+      "IsBattery04",
+      "ItmChargerBattery04Full"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,-16",
       "PowerSource,0,16"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Heater,TIsAirtightNoHuman",
       "Destructable,StatDamage,ACTChargerBattery04Damage,StatDamageMax,1.0",
       "Electrical,Electrical"
     ],
-    "mapGUIPropMaps"  : [      
+    "mapGUIPropMaps": [
       "Panel A",
       "HeaterItemGeneric",
       "Electrical"
     ],
-    "aTickers" : [ 
+    "aTickers": [
       "Power"
     ],
-    "strPortraitImg"  : "ItmChargerBattery04",
-    "jsonPI"            : "Charger04",
+    "strPortraitImg": "ItmChargerBattery04",
+    "jsonPI": "Charger04",
     "strAudioEmitter": "ItmChargerBattEVASound"
   },
   {
-    "strName" : "ItmChargerBattery04Dmg",
-    "strNameShort" : "Зарядное устройство",
-    "strNameFriendly" : "Зарядное устройство: Weber Laser (Повреждено)",
-    "strItemDef" : "ItmChargerBattery04Dmg",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
+    "strName": "ItmChargerBattery04Dmg",
+    "strNameShort": "Зарядное устройство",
+    "strNameFriendly": "Зарядное устройство: Weber Laser (Повреждено)",
+    "strItemDef": "ItmChargerBattery04Dmg",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [
       "Inventory"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsDamaged=1.0x1",
       "IsWeber=1.0x1",
       "IsHiddenInv=1.0x1",
@@ -567,34 +583,34 @@
       "IsTechnology=1.0x1",
       "IsCategoryElectronics=1.0x1"
     ],
-    "strContainerCT"    : "TIsFitContainerBattery04",
-    "nContainerHeight"   : 1,
-    "nContainerWidth"   : 1,
-    "mapAltItemDefs"  : [
-      "IsBattery04","ItmChargerBattery04FullDmg"
+    "strContainerCT": "TIsFitContainerBattery04",
+    "nContainerHeight": 1,
+    "nContainerWidth": 1,
+    "mapAltItemDefs": [
+      "IsBattery04",
+      "ItmChargerBattery04FullDmg"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,-16"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTChargerBattery04Destroy,StatDamageMax,1.0"
     ],
-    "aTickers" : [ 
-    ],
-    "strPortraitImg"  : "ItmChargerBattery04Dmg02"
+    "aTickers": [],
+    "strPortraitImg": "ItmChargerBattery04Dmg02"
   },
   {
-    "strName" : "ItmChargerBattery04DmgLoose",
-    "strNameShort" : "Зарядное устройство",
-    "strNameFriendly" : "Зарядное устройство: Weber Laser (Не Закреплено, Повреждено)",
-    "strItemDef" : "ItmChargerBattery04DmgLoose",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmChargerBattery04DmgLoose",
+    "strNameShort": "Зарядное устройство",
+    "strNameFriendly": "Зарядное устройство: Weber Laser (Не Закреплено, Повреждено)",
+    "strItemDef": "ItmChargerBattery04DmgLoose",
+    "strType": "Item",
+    "aInteractions": [
       "Inventory",
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsDamaged=1.0x1",
       "IsWeber=1.0x1",
       "IsCharger04=1.0x1",
@@ -609,36 +625,40 @@
       "IsTechnology=1.0x1",
       "IsCategoryElectronics=1.0x1"
     ],
-    "strContainerCT"    : "TIsFitContainerBattery04",
-    "nContainerHeight"   : 1,
-    "nContainerWidth"   : 1,
-    "mapAltItemDefs"  : [
-      "IsBattery04","ItmChargerBattery04FullDmgLoose"
+    "strContainerCT": "TIsFitContainerBattery04",
+    "nContainerHeight": 1,
+    "nContainerWidth": 1,
+    "mapAltItemDefs": [
+      "IsBattery04",
+      "ItmChargerBattery04FullDmgLoose"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,-16"
     ],
-    "mapSlotEffects" : [
-      "heldL","HeldItmDefaultL",
-      "heldR","HeldItmDefaultR",
-      "drag", "Blank"
+    "mapSlotEffects": [
+      "heldL",
+      "HeldItmDefaultL",
+      "heldR",
+      "HeldItmDefaultR",
+      "drag",
+      "Blank"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTChargerBattery04LooseDestroy,StatDamageMax,1.0"
     ],
-    "strPortraitImg"  : "ItmChargerBattery04Dmg02Loose"
+    "strPortraitImg": "ItmChargerBattery04Dmg02Loose"
   },
   {
-    "strName" : "ItmChargerBattery04Off",
-    "strNameShort" : "Зарядное устройство",
-    "strNameFriendly" : "Зарядное устройство: Weber Laser (Выкл.)",
-    "strItemDef" : "ItmChargerBattery04Off",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
+    "strName": "ItmChargerBattery04Off",
+    "strNameShort": "Зарядное устройство",
+    "strNameFriendly": "Зарядное устройство: Weber Laser (Выкл.)",
+    "strItemDef": "ItmChargerBattery04Off",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [
       "Inventory"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsWeber=1.0x1",
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
@@ -655,41 +675,42 @@
       "IsCategoryElectronics=1.0x1",
       "IsSignalable=1.0x1"
     ],
-    "strContainerCT"    : "TIsFitContainerBattery04",
-    "nContainerHeight"   : 1,
-    "nContainerWidth"   : 1,
-    "mapAltItemDefs"  : [
-      "IsBattery04","ItmChargerBattery04FullOff"
+    "strContainerCT": "TIsFitContainerBattery04",
+    "nContainerHeight": 1,
+    "nContainerWidth": 1,
+    "mapAltItemDefs": [
+      "IsBattery04",
+      "ItmChargerBattery04FullOff"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,-16",
       "PowerSource,0,16"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTChargerBattery04Damage,StatDamageMax,1.0",
       "Electrical,Electrical"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Electrical"
     ],
-    "aTickers" : [ 
+    "aTickers": [
       "Power"
     ],
-    "strPortraitImg"  : "ItmChargerBattery04",
-    "jsonPI"            : "Charger04"
+    "strPortraitImg": "ItmChargerBattery04",
+    "jsonPI": "Charger04"
   },
   {
-    "strName" : "ItmChargerBattery04OffLoose",
-    "strNameShort" : "Зарядное устройство",
-    "strNameFriendly" : "Зарядное устройство: Weber Laser (Не Закреплено)",
-    "strItemDef" : "ItmChargerBattery04OffLoose",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmChargerBattery04OffLoose",
+    "strNameShort": "Зарядное устройство",
+    "strNameFriendly": "Зарядное устройство: Weber Laser (Не Закреплено)",
+    "strItemDef": "ItmChargerBattery04OffLoose",
+    "strType": "Item",
+    "aInteractions": [
       "Inventory",
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsWeber=1.0x1",
       "IsCharger04=1.0x1",
       "IsOff=1.0x1",
@@ -703,37 +724,40 @@
       "IsTechnology=1.0x1",
       "IsCategoryElectronics=1.0x1"
     ],
-    "strContainerCT"    : "TIsFitContainerBattery04",
-    "nContainerHeight"   : 1,
-    "nContainerWidth"   : 1,
-    "mapAltItemDefs"  : [
-      "IsBattery04","ItmChargerBattery04FullOffLoose"
+    "strContainerCT": "TIsFitContainerBattery04",
+    "nContainerHeight": 1,
+    "nContainerWidth": 1,
+    "mapAltItemDefs": [
+      "IsBattery04",
+      "ItmChargerBattery04FullOffLoose"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,-16"
     ],
-    "mapSlotEffects" : [
-      "heldL","HeldItmDefaultL",
-      "heldR","HeldItmDefaultR",
-      "drag", "Blank"
+    "mapSlotEffects": [
+      "heldL",
+      "HeldItmDefaultL",
+      "heldR",
+      "HeldItmDefaultR",
+      "drag",
+      "Blank"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTChargerBattery04LooseDamage,StatDamageMax,1.0"
     ],
-    "strPortraitImg"  : "ItmChargerBattery04Loose"
+    "strPortraitImg": "ItmChargerBattery04Loose"
   },
-
   {
-    "strName" : "ItmChargerBattWelder01",
-    "strNameShort" : "Зарядное устройство",
-    "strNameFriendly" : "Зарядное устройство: Halvorson",
-    "strItemDef" : "ItmChargerBattWelder01",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
+    "strName": "ItmChargerBattWelder01",
+    "strNameShort": "Зарядное устройство",
+    "strNameFriendly": "Зарядное устройство: Halvorson",
+    "strItemDef": "ItmChargerBattWelder01",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [
       "Inventory"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsHalvorson=1.0x1",
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
@@ -743,7 +767,7 @@
       "IsSolid=1.0x1.0",
       "IsReadyHeat=1.0x1",
       "StatHeatArea=1.0x0.5",
-      "StatHeatVol=1.0x0.02", 
+      "StatHeatVol=1.0x0.02",
       "StatSolidTemp=1.0x310",
       "StatBasePrice=1.0x24.49",
       "StatDismantleProgressMax=1.0x220",
@@ -755,45 +779,46 @@
       "IsCategoryElectronics=1.0x1",
       "IsSignalable=1.0x1"
     ],
-    "strContainerCT"    : "TIsFitContainerWelder01Battery",
-    "nContainerHeight"   : 1,
-    "nContainerWidth"   : 1,
-    "mapAltItemDefs"  : [
-      "IsBatteryWelder01","ItmChargerBattWelder01Full"
+    "strContainerCT": "TIsFitContainerWelder01Battery",
+    "nContainerHeight": 1,
+    "nContainerWidth": 1,
+    "mapAltItemDefs": [
+      "IsBatteryWelder01",
+      "ItmChargerBattWelder01Full"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,-16",
       "PowerSource,0,16"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Heater,TIsAirtightNoHuman",
       "Destructable,StatDamage,ACTChargerBattWelder01Damage,StatDamageMax,1.0",
       "Electrical,Electrical"
     ],
-    "mapGUIPropMaps"  : [      
+    "mapGUIPropMaps": [
       "Panel A",
       "HeaterItemGeneric",
       "Electrical"
     ],
-    "aTickers" : [ 
+    "aTickers": [
       "Power"
     ],
-    "strPortraitImg"  : "ItmChargerBattWelder01",
-    "jsonPI"            : "ChargerWelder01",
+    "strPortraitImg": "ItmChargerBattWelder01",
+    "jsonPI": "ChargerWelder01",
     "strAudioEmitter": "ItmChargerBattEVASound"
   },
   {
-    "strName" : "ItmChargerBattWelder01OffLoose",
-    "strNameShort" : "Зарядное устройство",
-    "strNameFriendly" : "Зарядное устройство: Halvorson (Не Закреплено)",
-    "strItemDef" : "ItmChargerBattWelder01OffLoose",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmChargerBattWelder01OffLoose",
+    "strNameShort": "Зарядное устройство",
+    "strNameFriendly": "Зарядное устройство: Halvorson (Не Закреплено)",
+    "strItemDef": "ItmChargerBattWelder01OffLoose",
+    "strType": "Item",
+    "aInteractions": [
       "Inventory",
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsHalvorson=1.0x1",
       "IsChargerWelder01=1.0x1",
       "IsOff=1.0x1",
@@ -806,35 +831,38 @@
       "IsTechnology=1.0x1",
       "IsCategoryElectronics=1.0x1"
     ],
-    "strContainerCT"    : "TIsFitContainerWelder01Battery",
-    "nContainerHeight"   : 1,
-    "nContainerWidth"   : 1,
-    "mapAltItemDefs"  : [
-      "IsBatteryWelder01","ItmChargerBattWelder01FullOffLoose"
+    "strContainerCT": "TIsFitContainerWelder01Battery",
+    "nContainerHeight": 1,
+    "nContainerWidth": 1,
+    "mapAltItemDefs": [
+      "IsBatteryWelder01",
+      "ItmChargerBattWelder01FullOffLoose"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,-16"
     ],
-    "mapSlotEffects" : [
-      "heldL","HeldItmDefaultL",
-      "heldR","HeldItmDefaultR"
+    "mapSlotEffects": [
+      "heldL",
+      "HeldItmDefaultL",
+      "heldR",
+      "HeldItmDefaultR"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTChargerBattWelder01LooseDamage,StatDamageMax,1.0"
     ],
-    "strPortraitImg"  : "ItmChargerBattWelder01Loose"
+    "strPortraitImg": "ItmChargerBattWelder01Loose"
   },
   {
-    "strName" : "ItmChargerBattWelder01Off",
-    "strNameShort" : "Зарядное устройство",
-    "strNameFriendly" : "Зарядное устройство: Halvorson (Выкл.)",
-    "strItemDef" : "ItmChargerBattWelder01Off",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
+    "strName": "ItmChargerBattWelder01Off",
+    "strNameShort": "Зарядное устройство",
+    "strNameFriendly": "Зарядное устройство: Halvorson (Выкл.)",
+    "strItemDef": "ItmChargerBattWelder01Off",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [
       "Inventory"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsHalvorson=1.0x1",
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
@@ -851,42 +879,43 @@
       "IsCategoryElectronics=1.0x1",
       "IsSignalable=1.0x1"
     ],
-    "strContainerCT"    : "TIsFitContainerWelder01Battery",
-    "nContainerHeight"   : 1,
-    "nContainerWidth"   : 1,
-    "mapAltItemDefs"  : [
-      "IsBatteryWelder01","ItmChargerBattWelder01FullOff"
+    "strContainerCT": "TIsFitContainerWelder01Battery",
+    "nContainerHeight": 1,
+    "nContainerWidth": 1,
+    "mapAltItemDefs": [
+      "IsBatteryWelder01",
+      "ItmChargerBattWelder01FullOff"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,-16",
       "PowerSource,0,16"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTChargerBattWelder01Damage,StatDamageMax,1.0",
       "Electrical,Electrical"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Electrical"
     ],
-    "aTickers" : [ 
+    "aTickers": [
       "Power"
     ],
-    "strPortraitImg"  : "ItmChargerBattWelder01",
-    "jsonPI"            : "ChargerWelder01",
+    "strPortraitImg": "ItmChargerBattWelder01",
+    "jsonPI": "ChargerWelder01",
     "strAudioEmitter": "ItmChargerBattEVASound"
   },
   {
-    "strName" : "ItmChargerBattWelder01DmgLoose",
-    "strNameShort" : "Зарядное устройство",
-    "strNameFriendly" : "Зарядное устройство: Halvorson (Не Закреплено, Повреждено)",
-    "strItemDef" : "ItmChargerBattWelder01DmgLoose",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmChargerBattWelder01DmgLoose",
+    "strNameShort": "Зарядное устройство",
+    "strNameFriendly": "Зарядное устройство: Halvorson (Не Закреплено, Повреждено)",
+    "strItemDef": "ItmChargerBattWelder01DmgLoose",
+    "strType": "Item",
+    "aInteractions": [
       "Inventory",
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsDamaged=1.0x1",
       "IsHalvorson=1.0x1",
       "IsChargerWelder01=1.0x1",
@@ -900,35 +929,38 @@
       "IsTechnology=1.0x1",
       "IsCategoryElectronics=1.0x1"
     ],
-    "strContainerCT"    : "TIsFitContainerWelder01Battery",
-    "nContainerHeight"   : 1,
-    "nContainerWidth"   : 1,
-    "mapAltItemDefs"  : [
-      "IsBatteryWelder01","ItmChargerBattWelder01FullDmgLoose"
+    "strContainerCT": "TIsFitContainerWelder01Battery",
+    "nContainerHeight": 1,
+    "nContainerWidth": 1,
+    "mapAltItemDefs": [
+      "IsBatteryWelder01",
+      "ItmChargerBattWelder01FullDmgLoose"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,-16"
     ],
-    "mapSlotEffects" : [
-      "heldL","HeldItmDefaultL",
-      "heldR","HeldItmDefaultR"
+    "mapSlotEffects": [
+      "heldL",
+      "HeldItmDefaultL",
+      "heldR",
+      "HeldItmDefaultR"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTChargerBattWelder01LooseDestroy,StatDamageMax,1.0"
     ],
-    "strPortraitImg"  : "ItmChargerBattWelder01Dmg02Loose"
+    "strPortraitImg": "ItmChargerBattWelder01Dmg02Loose"
   },
   {
-    "strName" : "ItmChargerBattWelder01Dmg",
-    "strNameShort" : "Зарядное устройство",
-    "strNameFriendly" : "Зарядное устройство: Halvorson (Повреждено)",
-    "strItemDef" : "ItmChargerBattWelder01Dmg",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
+    "strName": "ItmChargerBattWelder01Dmg",
+    "strNameShort": "Зарядное устройство",
+    "strNameFriendly": "Зарядное устройство: Halvorson (Повреждено)",
+    "strItemDef": "ItmChargerBattWelder01Dmg",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [
       "Inventory"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsDamaged=1.0x1",
       "IsHalvorson=1.0x1",
       "IsHiddenInv=1.0x1",
@@ -946,20 +978,20 @@
       "IsCategoryElectronics=1.0x1",
       "IsSignalable=1.0x1"
     ],
-    "strContainerCT"    : "TIsFitContainerWelder01Battery",
-    "nContainerHeight"   : 1,
-    "nContainerWidth"   : 1,
-    "mapAltItemDefs"  : [
-      "IsBatteryWelder01","ItmChargerBattWelder01FullDmg"
+    "strContainerCT": "TIsFitContainerWelder01Battery",
+    "nContainerHeight": 1,
+    "nContainerWidth": 1,
+    "mapAltItemDefs": [
+      "IsBatteryWelder01",
+      "ItmChargerBattWelder01FullDmg"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,-16"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTChargerBattWelder01Destroy,StatDamageMax,1.0"
     ],
-    "aTickers" : [ 
-    ],
-    "strPortraitImg"  : "ItmChargerBattWelder01Dmg02"
+    "aTickers": [],
+    "strPortraitImg": "ItmChargerBattWelder01Dmg02"
   }
 ]

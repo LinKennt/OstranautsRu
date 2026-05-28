@@ -8,7 +8,7 @@
     "nFirst": 2,
     "nNext": 1,
     "nHobby": 1,
-    "aSkillsFirst"          : [
+    "aSkillsFirst": [
       "IsFit",
       "IsObservant",
       "SkillEngElectronic",
@@ -27,7 +27,7 @@
       "SkillPersuade",
       "SkillStealth"
     ],
-    "aSkillsNext"          : [
+    "aSkillsNext": [
       "IsFit",
       "IsObservant",
       "SkillEngElectronic",
@@ -46,7 +46,7 @@
       "SkillPersuade",
       "SkillStealth"
     ],
-    "aSkillsHobby"          : [
+    "aSkillsHobby": [
       "SkillAcrobatics",
       "SkillActing",
       "SkillSports",
@@ -79,6 +79,7 @@
       "SkillOpsComms",
       "SkillOpsDrone",
       "SkillOpsEnvSuit",
+      "SkillOpsGunnery",
       "SkillOpsSensors",
       "SkillOpsSpaceship",
       "SkillOpsZeroG",
@@ -86,6 +87,7 @@
       "SkillPersuade",
       "SkillRangedArchery",
       "SkillRangedEnergy",
+      "SkillRangedHeavy",
       "SkillRangedGunpowder",
       "SkillRangedThrown",
       "SkillSciencePhysics",
@@ -98,10 +100,10 @@
       "IsTough",
       "IsObservant"
     ],
-    "aEvents"          : [
+    "aEvents": [
       "CGEncShipbreakerEvent"
     ],
-    "aEventsShip"          : [
+    "aEventsShip": [
       "CGEncShipbreakerShipEvents"
     ]
   },
@@ -114,7 +116,7 @@
     "nFirst": 2,
     "nNext": 1,
     "nHobby": 1,
-    "aSkillsFirst"          : [
+    "aSkillsFirst": [
       "IsFit",
       "IsObservant",
       "SkillAdmin",
@@ -133,7 +135,7 @@
       "SkillMeleeUnarmed",
       "SkillSciencePsychology"
     ],
-    "aSkillsNext"          : [
+    "aSkillsNext": [
       "IsFit",
       "IsObservant",
       "SkillEngElectronic",
@@ -152,7 +154,7 @@
       "SkillPersuade",
       "SkillStealth"
     ],
-    "aSkillsHobby"          : [
+    "aSkillsHobby": [
       "SkillAcrobatics",
       "SkillActing",
       "SkillAdmin",
@@ -187,6 +189,7 @@
       "SkillOpsComms",
       "SkillOpsDrone",
       "SkillOpsEnvSuit",
+      "SkillOpsGunnery",
       "SkillOpsSensors",
       "SkillOpsSpaceship",
       "SkillOpsZeroG",
@@ -194,6 +197,7 @@
       "SkillPersuade",
       "SkillRangedArchery",
       "SkillRangedEnergy",
+      "SkillRangedHeavy",
       "SkillRangedGunpowder",
       "SkillRangedThrown",
       "SkillScienceForensic",
@@ -207,13 +211,13 @@
       "IsTough",
       "IsObservant"
     ],
-    "aEvents"          : [
+    "aEvents": [
       "CGEncShipbreakerEvent"
     ],
-    "aEventsMoney"          : [
+    "aEventsMoney": [
       "CGEncShipbreakerMoneyEvents"
     ],
-    "aEventsShip"          : [
+    "aEventsShip": [
       "CGEncShipbreakerShipEvents"
     ]
   },
@@ -223,15 +227,16 @@
     "strCTPrereqs": "TIsImprisoned",
     "strLootConds": "CGCareerPrisoner",
     "strLootCondsNext": "CGCareerPrisonerNext",
-    "bComingSoon" : true,
+    "bComingSoon": true,
     "nFirst": 2,
     "nNext": 1,
     "nHobby": 0,
-    "aSkillsFirst"          : [
+    "aSkillsFirst": [
       "IsStrong",
       "IsFit",
       "IsTough",
       "IsObservant",
+      "SkillEngExcavation",
       "SkillEtiquetteFolk",
       "SkillEtiquetteStreet",
       "SkillForgery",
@@ -244,11 +249,12 @@
       "SkillPersuade",
       "SkillStealth"
     ],
-    "aSkillsNext"          : [
+    "aSkillsNext": [
       "IsStrong",
       "IsFit",
       "IsTough",
       "IsObservant",
+      "SkillEngExcavation",
       "SkillEtiquetteFolk",
       "SkillEtiquetteStreet",
       "SkillForgery",
@@ -261,26 +267,24 @@
       "SkillPersuade",
       "SkillStealth"
     ],
-    "aSkillsHobby"          : [
-    ],
-    "aEvents"          : [
+    "aSkillsHobby": [],
+    "aEvents": [
       "CGEncPrisonContactEvent",
       "CGEncPrisonContactEvent"
     ],
-    "aEventsShip"          : [
-    ]
+    "aEventsShip": []
   },
   {
     "strName": "Bartender",
     "strNameFriendly": "Бармен",
-    "bComingSoon" : true,
+    "bComingSoon": true,
     "strCTPrereqs": "TNotIsImprisoned",
     "strLootConds": "CGCareerBartender",
     "strLootCondsNext": "CGCareerBartenderNext",
     "nFirst": 2,
     "nNext": 1,
     "nHobby": 1,
-    "aSkillsFirst"          : [
+    "aSkillsFirst": [
       "SkillActing",
       "SkillAdmin",
       "SkillCooking",
@@ -293,7 +297,7 @@
       "IsCoordinated",
       "IsObservant"
     ],
-    "aSkillsNext"          : [
+    "aSkillsNext": [
       "SkillActing",
       "SkillAdmin",
       "SkillCooking",
@@ -306,7 +310,7 @@
       "IsCoordinated",
       "IsObservant"
     ],
-    "aSkillsHobby"          : [
+    "aSkillsHobby": [
       "SkillAcrobatics",
       "SkillActing",
       "SkillSports",
@@ -333,6 +337,7 @@
       "SkillPersuade",
       "SkillRangedEnergy",
       "SkillRangedGunpowder",
+      "SkillRangedHeavy",
       "SkillSculpture",
       "SkillSong",
       "SkillStealth",
@@ -343,22 +348,20 @@
       "IsTough",
       "IsObservant"
     ],
-    "aEvents"          : [
-    ],
-    "aEventsShip"          : [
-    ]
+    "aEvents": [],
+    "aEventsShip": []
   },
   {
     "strName": "Criminal",
     "strNameFriendly": "Преступник",
-    "bComingSoon" : true,
+    "bComingSoon": true,
     "strCTPrereqs": "TNotIsImprisoned",
     "strLootConds": "CGCareerCriminal",
     "strLootCondsNext": "CGCareerCriminalNext",
     "nFirst": 2,
     "nNext": 1,
     "nHobby": 1,
-    "aSkillsFirst"          : [
+    "aSkillsFirst": [
       "IsStrong",
       "IsFit",
       "IsTough",
@@ -377,14 +380,18 @@
       "SkillNavigationSurface",
       "SkillOpsEnvSuit",
       "SkillOpsGroundVehicle",
+      "SkillOpsGunnery",
+      "SkillOpsSensors",
+      "SkillOpsSpaceship",
       "SkillOpsZeroG",
       "SkillPersuade",
       "SkillRangedArchery",
+      "SkillRangedHeavy",
       "SkillRangedThrown",
       "SkillStealth",
       "SkillTracking"
     ],
-    "aSkillsNext"          : [
+    "aSkillsNext": [
       "IsStrong",
       "IsFit",
       "IsTough",
@@ -403,14 +410,18 @@
       "SkillNavigationSurface",
       "SkillOpsEnvSuit",
       "SkillOpsGroundVehicle",
+      "SkillOpsGunnery",
+      "SkillOpsSensors",
+      "SkillOpsSpaceship",
       "SkillOpsZeroG",
       "SkillPersuade",
       "SkillRangedArchery",
+      "SkillRangedHeavy",
       "SkillRangedThrown",
       "SkillStealth",
       "SkillTracking"
     ],
-    "aSkillsHobby"          : [
+    "aSkillsHobby": [
       "SkillAcrobatics",
       "SkillActing",
       "SkillSports",
@@ -442,6 +453,7 @@
       "SkillOpsComms",
       "SkillOpsDrone",
       "SkillOpsEnvSuit",
+      "SkillOpsGunnery",
       "SkillOpsSensors",
       "SkillOpsSpaceship",
       "SkillOpsZeroG",
@@ -450,6 +462,7 @@
       "SkillRangedArchery",
       "SkillRangedEnergy",
       "SkillRangedGunpowder",
+      "SkillRangedHeavy",
       "SkillRangedThrown",
       "SkillSculpture",
       "SkillSong",
@@ -460,22 +473,20 @@
       "IsTough",
       "IsObservant"
     ],
-    "aEvents"          : [
-    ],
-    "aEventsShip"          : [
-    ]
+    "aEvents": [],
+    "aEventsShip": []
   },
   {
     "strName": "LEOfficer",
     "strNameFriendly": "Сотрудник правоохранительных органов",
-    "bComingSoon" : true,
+    "bComingSoon": true,
     "strCTPrereqs": "TIsLEOPrereqs",
     "strLootConds": "CGCareerLEOfficer",
     "strLootCondsNext": "CGCareerLEOfficerNext",
     "nFirst": 2,
     "nNext": 1,
     "nHobby": 1,
-    "aSkillsFirst"          : [
+    "aSkillsFirst": [
       "IsStrong",
       "IsFit",
       "IsCoordinated",
@@ -490,15 +501,17 @@
       "SkillOpsComms",
       "SkillOpsEnvSuit",
       "SkillOpsGroundVehicle",
+      "SkillOpsGunnery",
       "SkillOpsZeroG",
       "SkillPersuade",
       "SkillRangedEnergy",
       "SkillRangedGunpowder",
+      "SkillRangedHeavy",
       "SkillTacticsGround",
       "SkillInterrogate",
       "SkillScienceForensic"
     ],
-    "aSkillsNext"          : [
+    "aSkillsNext": [
       "IsStrong",
       "IsFit",
       "IsCoordinated",
@@ -513,15 +526,18 @@
       "SkillOpsComms",
       "SkillOpsEnvSuit",
       "SkillOpsGroundVehicle",
+      "SkillOpsGunnery",
+      "SkillOpsSensors",
       "SkillOpsZeroG",
       "SkillPersuade",
       "SkillRangedEnergy",
       "SkillRangedGunpowder",
+      "SkillRangedHeavy",
       "SkillTacticsGround",
       "SkillInterrogate",
       "SkillScienceForensic"
     ],
-    "aSkillsHobby"          : [
+    "aSkillsHobby": [
       "SkillActing",
       "SkillAdmin",
       "SkillAnimalHandling",
@@ -542,6 +558,9 @@
       "SkillNavigationSurface",
       "SkillOpsFixedWing",
       "SkillOpsGroundVehicle",
+      "SkillOpsGunnery",
+      "SkillOpsSensors",
+      "SkillOpsSpaceship",
       "SkillOpsRotorWing",
       "SkillOpsZeroG",
       "SkillPainting",
@@ -549,6 +568,7 @@
       "SkillRangedArchery",
       "SkillRangedEnergy",
       "SkillRangedGunpowder",
+      "SkillRangedHeavy",
       "SkillRangedThrown",
       "SkillSculpture",
       "SkillSong",
@@ -560,22 +580,20 @@
       "IsTough",
       "IsObservant"
     ],
-    "aEvents"          : [
-    ],
-    "aEventsShip"          : [
-    ]
+    "aEvents": [],
+    "aEventsShip": []
   },
   {
     "strName": "Manager",
     "strNameFriendly": "Менеджер",
-    "bComingSoon" : true,
+    "bComingSoon": true,
     "strCTPrereqs": "TNotIsImprisoned",
     "strLootConds": "CGCareerManager",
     "strLootCondsNext": "CGCareerManagerNext",
     "nFirst": 2,
     "nNext": 1,
     "nHobby": 1,
-    "aSkillsFirst"          : [
+    "aSkillsFirst": [
       "SkillActing",
       "SkillAdmin",
       "SkillEnglish",
@@ -588,7 +606,7 @@
       "IsLeader",
       "IsObservant"
     ],
-    "aSkillsNext"          : [
+    "aSkillsNext": [
       "SkillActing",
       "SkillAdmin",
       "SkillEnglish",
@@ -601,7 +619,7 @@
       "IsLeader",
       "IsObservant"
     ],
-    "aSkillsHobby"          : [
+    "aSkillsHobby": [
       "SkillAcrobatics",
       "SkillActing",
       "SkillSports",
@@ -638,10 +656,8 @@
       "IsTough",
       "IsObservant"
     ],
-    "aEvents"          : [
-    ],
-    "aEventsShip"          : [
-    ]
+    "aEvents": [],
+    "aEventsShip": []
   },
   {
     "strName": "ORG",
@@ -653,28 +669,23 @@
     "nFirst": 0,
     "nNext": 0,
     "nHobby": 0,
-    "aSkillsFirst"          : [
-    ],
-    "aSkillsNext"          : [
-    ],
-    "aSkillsHobby"          : [
-    ],
-    "aEvents"          : [
-    ],
-    "aEventsShip"          : [
-    ]
+    "aSkillsFirst": [],
+    "aSkillsNext": [],
+    "aSkillsHobby": [],
+    "aEvents": [],
+    "aEventsShip": []
   },
   {
     "strName": "Pirate",
     "strNameFriendly": "Пират",
-    "bComingSoon" : true,
+    "bComingSoon": true,
     "strCTPrereqs": "TNotIsImprisoned",
     "strLootConds": "CGCareerPirate",
     "strLootCondsNext": "CGCareerPirateNext",
     "nFirst": 2,
     "nNext": 1,
     "nHobby": 1,
-    "aSkillsFirst"          : [
+    "aSkillsFirst": [
       "SkillAcrobatics",
       "SkillClimbing",
       "SkillCooking",
@@ -710,7 +721,7 @@
       "IsTough",
       "IsObservant"
     ],
-    "aSkillsNext"          : [
+    "aSkillsNext": [
       "SkillAcrobatics",
       "SkillClimbing",
       "SkillCooking",
@@ -746,7 +757,7 @@
       "IsTough",
       "IsObservant"
     ],
-    "aSkillsHobby"          : [
+    "aSkillsHobby": [
       "SkillAcrobatics",
       "SkillActing",
       "SkillSports",
@@ -786,6 +797,7 @@
       "SkillRangedArchery",
       "SkillRangedEnergy",
       "SkillRangedGunpowder",
+      "SkillRangedHeavy",
       "SkillRangedThrown",
       "SkillSculpture",
       "SkillSong",
@@ -796,12 +808,9 @@
       "IsTough",
       "IsObservant"
     ],
-    "aEvents"          : [
-    ],
-    "aEventsShip"          : [
-    ]
+    "aEvents": [],
+    "aEventsShip": []
   },
-  
   {
     "strName": "Influencer",
     "strNameFriendly": "Инфлюенсер",
@@ -811,7 +820,7 @@
     "nFirst": 3,
     "nNext": 2,
     "nHobby": 2,
-    "aSkillsFirst"          : [
+    "aSkillsFirst": [
       "SkillActing",
       "SkillEnglish",
       "SkillEtiquetteFolk",
@@ -830,7 +839,7 @@
       "IsCoordinated",
       "IsGregarious"
     ],
-    "aSkillsNext"          : [
+    "aSkillsNext": [
       "SkillAcrobatics",
       "SkillActing",
       "SkillClimbing",
@@ -865,7 +874,7 @@
       "IsGregarious",
       "IsLeader"
     ],
-    "aSkillsHobby"          : [
+    "aSkillsHobby": [
       "SkillAcrobatics",
       "SkillActing",
       "SkillAdmin",
@@ -914,12 +923,9 @@
       "IsTough",
       "IsObservant"
     ],
-    "aEvents"          : [
-    ],
-    "aEventsMoney"          : [
-    ],
-    "aEventsShip"          : [
-    ]
+    "aEvents": [],
+    "aEventsMoney": [],
+    "aEventsShip": []
   },
   {
     "strName": "Scientist",
@@ -930,7 +936,7 @@
     "nFirst": 3,
     "nNext": 1,
     "nHobby": 1,
-    "aSkillsFirst"          : [
+    "aSkillsFirst": [
       "SkillHacking",
       "SkillMedicalDiagnostics",
       "SkillNavigationSpace",
@@ -943,11 +949,12 @@
       "SkillSciencePhysics",
       "SkillSciencePsychology",
       "SkillScienceResearch",
+      "SkillOpsSensors",
       "IsAmbitious",
       "IsObservant",
       "IsGenius"
     ],
-    "aSkillsNext"          : [
+    "aSkillsNext": [
       "SkillAnimalHandling",
       "SkillEtiquetteSpacefarer",
       "SkillHacking",
@@ -975,7 +982,7 @@
       "IsObservant",
       "IsGenius"
     ],
-    "aSkillsHobby"          : [
+    "aSkillsHobby": [
       "SkillAcrobatics",
       "SkillActing",
       "SkillAdmin",
@@ -1025,14 +1032,10 @@
       "IsTough",
       "IsObservant"
     ],
-    "aEvents"          : [
-    ],
-    "aEventsMoney"          : [
-    ],
-    "aEventsShip"          : [
-    ]
+    "aEvents": [],
+    "aEventsMoney": [],
+    "aEventsShip": []
   },
-  
   {
     "strName": "Technician",
     "strNameFriendly": "Техник",
@@ -1042,7 +1045,7 @@
     "nFirst": 2,
     "nNext": 1,
     "nHobby": 1,
-    "aSkillsFirst"          : [
+    "aSkillsFirst": [
       "SkillEngCivil",
       "SkillEngCombat",
       "SkillEngConstruction",
@@ -1052,7 +1055,7 @@
       "SkillEngSoftware",
       "SkillEngSpaceship"
     ],
-    "aSkillsNext"          : [
+    "aSkillsNext": [
       "IsFit",
       "IsObservant",
       "SkillEngCivil",
@@ -1072,7 +1075,7 @@
       "SkillOpsSpaceship",
       "SkillOpsZeroG"
     ],
-    "aSkillsHobby"          : [
+    "aSkillsHobby": [
       "SkillAcrobatics",
       "SkillActing",
       "SkillAdmin",
@@ -1124,11 +1127,8 @@
       "IsTough",
       "IsObservant"
     ],
-    "aEvents"          : [
-    ],
-    "aEventsMoney"          : [
-    ],
-    "aEventsShip"          : [
-    ]
+    "aEvents": [],
+    "aEventsMoney": [],
+    "aEventsShip": []
   }
 ]

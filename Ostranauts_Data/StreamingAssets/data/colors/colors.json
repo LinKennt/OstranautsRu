@@ -147,6 +147,13 @@
     "nA": 0
   },
   {
+    "strName": "BlueKiosk",
+    "nR": 84,
+    "nG": 120,
+    "nB": 150,
+    "nA": 255
+  },
+  {
     "strName": "BlueNeon",
     "nR": 84,
     "nG": 120,
@@ -158,7 +165,7 @@
     "nR": 84,
     "nG": 120,
     "nB": 150,
-    "nA": 255
+    "nA": 85
   },
   {
     "strName": "BlueXenon",
@@ -448,6 +455,62 @@
     "nA": 100
   },
   {
+    "strName": "FactionGalileanConfederacy",
+    "nR": 128,
+    "nG": 152,
+    "nB": 169,
+    "nA": 255
+  },
+  {
+    "strName": "FactionCCRE",
+    "nR": 232,
+    "nG": 117,
+    "nB": 0,
+    "nA": 255
+  },
+  {
+    "strName": "FactionRepDislikes",
+    "nR": 235,
+    "nG": 50,
+    "nB": 5,
+    "nA": 255
+  },
+  {
+    "strName": "FactionRepNeutral",
+    "nR": 80,
+    "nG": 80,
+    "nB": 80,
+    "nA": 255
+  },
+  {
+    "strName": "FactionRepWarm",
+    "nR": 40,
+    "nG": 100,
+    "nB": 100,
+    "nA": 255
+  },
+  {
+    "strName": "FactionRepFriendly",
+    "nR": 20,
+    "nG": 150,
+    "nB": 150,
+    "nA": 255
+  },
+  {
+    "strName": "FactionRepTrusted",
+    "nR": 0,
+    "nG": 200,
+    "nB": 200,
+    "nA": 255
+  },
+  {
+    "strName": "FactionRepHonored",
+    "nR": 0,
+    "nG": 255,
+    "nB": 255,
+    "nA": 255
+  },
+  {
     "strName": "Good",
     "nR": 0,
     "nG": 140,
@@ -620,6 +683,13 @@
     "nR": 195,
     "nG": 227,
     "nB": 255,
+    "nA": 255
+  },
+  {
+    "strName": "SparkYellow",
+    "nR": 250,
+    "nG": 203,
+    "nB": 134,
     "nA": 255
   },
   {
@@ -798,18 +868,172 @@
     "nA": 255
   },
   {
+    "strName": "VibrantGreenLight",
+    "nR": 8,
+    "nG": 210,
+    "nB": 75,
+    "nA": 75
+  },
+  {
+    "strName": "VibrantPurpleLight",
+    "nR": 121,
+    "nG": 26,
+    "nB": 217,
+    "nA": 75
+  },
+  {
+    "strName": "VibrantRedLight",
+    "nR": 210,
+    "nG": 25,
+    "nB": 8,
+    "nA": 75
+  },
+  {
+    "strName": "WhiteLight",
+    "nR": 230,
+    "nG": 231,
+    "nB": 255,
+    "nA": 75
+  },
+  {
     "strName": "WhiteCool",
     "nR": 140,
     "nG": 200,
     "nB": 255,
-    "nA": 255
+    "nA": 75
   },
   {
     "strName": "WhiteWarm",
     "nR": 255,
     "nG": 200,
     "nB": 140,
-    "nA": 255
+    "nA": 75
+  },
+  {
+    "strName": "VibrantGreenLightCustom",
+    "nR": 8,
+    "nG": 210,
+    "nB": 75,
+    "nA": 150
+  },
+  {
+    "strName": "VibrantPurpleLightCustom",
+    "nR": 121,
+    "nG": 26,
+    "nB": 217,
+    "nA": 150
+  },
+  {
+    "strName": "VibrantRedLightCustom",
+    "nR": 210,
+    "nG": 25,
+    "nB": 8,
+    "nA": 150
+  },
+  {
+    "strName": "WhiteLightCustom",
+    "nR": 230,
+    "nG": 231,
+    "nB": 255,
+    "nA": 150
+  },
+  {
+    "strName": "WhiteCoolCustom",
+    "nR": 140,
+    "nG": 200,
+    "nB": 255,
+    "nA": 150
+  },
+  {
+    "strName": "WhiteWarmCustom",
+    "nR": 255,
+    "nG": 200,
+    "nB": 140,
+    "nA": 150
+  },
+  {
+    "strName": "VibrantGreenLightCeiling",
+    "nR": 8,
+    "nG": 210,
+    "nB": 75,
+    "nA": 100
+  },
+  {
+    "strName": "VibrantPurpleLightCeiling",
+    "nR": 121,
+    "nG": 26,
+    "nB": 217,
+    "nA": 100
+  },
+  {
+    "strName": "VibrantRedLightCeiling",
+    "nR": 210,
+    "nG": 25,
+    "nB": 8,
+    "nA": 100
+  },
+  {
+    "strName": "WhiteLightCeiling",
+    "nR": 230,
+    "nG": 231,
+    "nB": 255,
+    "nA": 100
+  },
+  {
+    "strName": "WhiteCoolCeiling",
+    "nR": 140,
+    "nG": 200,
+    "nB": 255,
+    "nA": 100
+  },
+  {
+    "strName": "WhiteWarmCeiling",
+    "nR": 255,
+    "nG": 200,
+    "nB": 140,
+    "nA": 100
+  },
+  {
+    "strName": "VibrantGreenLightCeilingCustom",
+    "nR": 8,
+    "nG": 210,
+    "nB": 75,
+    "nA": 210
+  },
+  {
+    "strName": "VibrantPurpleLightCeilingCustom",
+    "nR": 121,
+    "nG": 26,
+    "nB": 217,
+    "nA": 210
+  },
+  {
+    "strName": "VibrantRedLightCeilingCustom",
+    "nR": 210,
+    "nG": 25,
+    "nB": 8,
+    "nA": 210
+  },
+  {
+    "strName": "WhiteLightCeilingCustom",
+    "nR": 230,
+    "nG": 231,
+    "nB": 255,
+    "nA": 210
+  },
+  {
+    "strName": "WhiteCoolCeilingCustom",
+    "nR": 140,
+    "nG": 200,
+    "nB": 255,
+    "nA": 210
+  },
+  {
+    "strName": "WhiteWarmCeilingCustom",
+    "nR": 255,
+    "nG": 200,
+    "nB": 140,
+    "nA": 210
   },
   {
     "strName": "WristPDABlue",
@@ -896,6 +1120,13 @@
     "nA": 255
   },
   {
+    "strName": "SmokeGray",
+    "nR": 122,
+    "nG": 147,
+    "nB": 160,
+    "nA": 255
+  },
+  {
     "strName": "TempRed",
     "nR": 245,
     "nG": 93,
@@ -934,6 +1165,13 @@
     "strName": "SunVenusYellow",
     "nR": 255,
     "nG": 255,
+    "nB": 155,
+    "nA": 255
+  },
+  {
+    "strName": "SunFaintPale",
+    "nR": 165,
+    "nG": 165,
     "nB": 155,
     "nA": 255
   }

@@ -1,16 +1,16 @@
 [
   {
-    "strName" : "ItmFusionABLWall01Loose",
-    "strNameShort" : "ABL Core Liner",
-    "strNameFriendly" : "Ablative Core Liner Replacement (Loose)",
-    "strItemDef" : "ItmFusionABLWall01Loose",
-    "strDesc" : "An ablative reactor core liner replacement for use in Sulaiman fusion reactor cores. Made of carbon and tungsten, the material is designed to ablate when impacted by X-Rays when a nuclear reactor core chamber runs overly hot.\n\nATTENTION: Turn off reactor before replacing ablative core liner within the core.\n\nWARNING: ABL Core Liner should be replaced before reaching a depleted state.",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmFusionABLWall01Loose",
+    "strNameShort": "ABL Core Liner",
+    "strNameFriendly": "Ablative Core Liner Replacement (Loose)",
+    "strItemDef": "ItmFusionABLWall01Loose",
+    "strDesc": "An ablative reactor core liner replacement for use in Sulaiman fusion reactor cores. Made of carbon and tungsten, the material is designed to ablate when impacted by X-Rays when a nuclear reactor core chamber runs overly hot.\n\nATTENTION: Turn off reactor before replacing ablative core liner within the core.\n\nWARNING: ABL Core Liner should be replaced before reaching a depleted state.",
+    "strType": "Item",
+    "aInteractions": [
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsSulaiman=1.0x1",
       "IsFusionABLWall=1.0x1",
       "IsSolid=1.0x1.0",
@@ -21,30 +21,29 @@
       "StatDamageMax=1.0x6",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapPoints"      : [
-    ],
-    "mapGUIPropMaps"  : [
-    ],
-    "aUpdateCommands" : [
+    "mapPoints": [],
+    "mapGUIPropMaps": [],
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTMechDestroy,StatDamageMax,1.0"
     ],
-    "mapSlotEffects" : [
-      "drag", "Blank"
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
     ],
-    "strPortraitImg"  : "ItmFusionABLWall01Loose"
-  }, 
+    "strPortraitImg": "ItmFusionABLWall01Loose"
+  },
   {
-    "strName" : "ItmCanisterLHe01Loose",
-    "strNameShort" : "Cryo Tank",
-    "strNameFriendly" : "Cryo Reservoir (Loose)",
-    "strDesc" : "A large tank for storing liquid helium, used as cryogenic agent for cooling and protecting the magnets and other components of an Inertial Confinement Fusion Reactor.",
-    "strItemDef" : "ItmCanisterLHe01Loose",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmCanisterLHe01Loose",
+    "strNameShort": "Cryo Tank",
+    "strNameFriendly": "Cryo Reservoir (Loose)",
+    "strDesc": "A large tank for storing liquid helium, used as cryogenic agent for cooling and protecting the magnets and other components of an Inertial Confinement Fusion Reactor.",
+    "strItemDef": "ItmCanisterLHe01Loose",
+    "strType": "Item",
+    "aInteractions": [
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsAirtight=1.0x1",
       "IsSalvageValueHigh=1.0x1.0",
       "IsSolid=1.0x1.0",
@@ -64,34 +63,36 @@
       "IsMechanical=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTMechDestroy,StatDamageMax,1.0"
     ],
-    "mapSlotEffects" : [
-      "drag", "Blank"
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
     ],
-    "aStartingCondRules"  : [
+    "aStartingCondRules": [
       "DcGasTemp=1",
       "DcGasPressure=1",
       "DcGasPpCH4=1",
+      "DcGasPpCO=1",
       "DcGasPpCO2=1",
       "DcGasPpH2SO4=1",
       "DcGasPpNH3=1",
       "DcGasPpN2=1",
-      "DcGasPpO2=1"
+      "DcGasPpO2=1",
+      "DcGasPpSmoke=1"
     ],
-    "strPortraitImg"  : "ItmCanisterLHe01Loose"
+    "strPortraitImg": "ItmCanisterLHe01Loose"
   },
   {
-    "strName" : "ItmCanisterLHe01",
-    "strNameShort" : "Cryo Tank",
-    "strNameFriendly" : "Cryo Reservoir",
-    "strDesc" : "A large tank for storing liquid helium, used as cryogenic agent for cooling and protecting the magnets and other components of an Inertial Confinement Fusion Reactor.",
-    "strItemDef" : "ItmCanisterLHe01",
-    "strType"    : "Item",
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmCanisterLHe01",
+    "strNameShort": "Cryo Tank",
+    "strNameFriendly": "Cryo Reservoir",
+    "strDesc": "A large tank for storing liquid helium, used as cryogenic agent for cooling and protecting the magnets and other components of an Inertial Confinement Fusion Reactor.",
+    "strItemDef": "ItmCanisterLHe01",
+    "strType": "Item",
+    "aInteractions": [],
+    "aStartingConds": [
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
       "IsAirtight=1.0x1",
@@ -112,34 +113,35 @@
       "IsMechanical=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTMechDestroy,StatDamageMax,1.0"
     ],
-    "aStartingCondRules"  : [
+    "aStartingCondRules": [
       "DcGasTemp=1",
       "DcGasPressure=1",
       "DcGasPpCH4=1",
+      "DcGasPpCO=1",
       "DcGasPpCO2=1",
       "DcGasPpH2SO4=1",
       "DcGasPpNH3=1",
       "DcGasPpN2=1",
-      "DcGasPpO2=1"
+      "DcGasPpO2=1",
+      "DcGasPpSmoke=1"
     ],
-    "strPortraitImg"  : "ItmCanisterLHe01",
+    "strPortraitImg": "ItmCanisterLHe01",
     "strAudioEmitter": "ItmCanisterLHe02Sound"
   },
-  
   {
-    "strName" : "ItmFusionReactorCore01Batt",
-    "strNameShort" : "Reactor Core",
-    "strNameFriendly" : "IC Fusion Reactor Core: Sulaiman \"X(X) TW\" (Battery Mode)",
-    "strDesc" : "An Inertial Confinement Fusion Reactor. Takes fuel in the form of He3 and D2O. A functioning reactor is capable of producing an immense amount of power, and can be used as part of a \"torch drive\" for interplanetary travel.",
-    "strItemDef" : "ItmFusionReactorCore01On",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmFusionReactorCore01Batt",
+    "strNameShort": "Reactor Core",
+    "strNameFriendly": "IC Fusion Reactor Core: Sulaiman \"X(X) TW\" (Battery Mode)",
+    "strDesc": "An Inertial Confinement Fusion Reactor. Takes fuel in the form of He3 and D2O. A functioning reactor is capable of producing an immense amount of power, and can be used as part of a \"torch drive\" for interplanetary travel.",
+    "strItemDef": "ItmFusionReactorCore01On",
+    "strType": "Item",
+    "aInteractions": [
       "GUIReactor"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
       "IsReactorIC=1.0x1",
@@ -163,7 +165,7 @@
       "IsTechnology=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,32,-48",
       "Module01,-16,32",
       "Module02,0,32",
@@ -180,40 +182,41 @@
       "PowerOutput,-32,32",
       "PowerSource,-32,-32"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Panel A",
       "ReactorIC"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Heater,TIsAirtightNoHuman",
       "Destructable,StatDamage,ACTFusionReactorCore01Damage,StatDamageMax,1.0"
     ],
-    "strPortraitImg"  : "ItmFusionReactorCore01",
-    "aTickers" : [ 
+    "strPortraitImg": "ItmFusionReactorCore01",
+    "aTickers": [
       "Power"
     ],
-    "aStartingCondRules"  : [
+    "aStartingCondRules": [
       "DcABLWall=1"
     ],
-    "jsonPI"            : "FusionReactorCore01Batt",
+    "jsonPI": "FusionReactorCore01Batt",
     "strAudioEmitter": "ItmFusionReactorCore01BattSound"
   },
   {
-    "strName" : "ItmFusionReactorCore01Ignition",
-    "strNameShort" : "Reactor Core",
-    "strNameFriendly" : "IC Fusion Reactor Core: Sulaiman \"X(X) TW\" (Running)",
-    "strDesc" : "An Inertial Confinement Fusion Reactor. Takes fuel in the form of He3 and D2O. A functioning reactor is capable of producing an immense amount of power, and can be used as part of a \"torch drive\" for interplanetary travel.",
-    "strItemDef" : "ItmFusionReactorCore01On",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmFusionReactorCore01Ignition",
+    "strNameShort": "Reactor Core",
+    "strNameFriendly": "IC Fusion Reactor Core: Sulaiman \"X(X) TW\" (Running)",
+    "strDesc": "An Inertial Confinement Fusion Reactor. Takes fuel in the form of He3 and D2O. A functioning reactor is capable of producing an immense amount of power, and can be used as part of a \"torch drive\" for interplanetary travel.",
+    "strItemDef": "ItmFusionReactorCore01On",
+    "strType": "Item",
+    "aInteractions": [
       "GUIReactor"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
       "IsPowerGen=1.0x1",
       "IsPowerRecalc=1.0x1",
       "IsReactorIC=1.0x1",
+      "IsExplosive=1.0x1",
       "IsFusionReactorCore=1.0x1",
       "IsReadyFusion=1.0x1",
       "IsReadyHeat=1.0x1",
@@ -237,7 +240,7 @@
       "IsTechnology=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,32,-48",
       "Module01,-16,32",
       "Module02,0,32",
@@ -254,32 +257,32 @@
       "PowerOutput,-32,32",
       "PowerSource,-32,-32"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Panel A",
       "ReactorIC"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Heater,TIsAirtightNoHuman",
       "Destructable,StatDamage,ACTFusionReactorCore01DamageExplode,StatDamageMax,1.0"
     ],
-    "aStartingCondRules"  : [
+    "aStartingCondRules": [
       "DcABLWall=1"
     ],
-    "strPortraitImg"  : "ItmFusionReactorCore01",
-    "jsonPI"            : "FusionReactorCore01Ignition",
+    "strPortraitImg": "ItmFusionReactorCore01",
+    "jsonPI": "FusionReactorCore01Ignition",
     "strAudioEmitter": "ItmFusionReactorCore01IgnitionSound"
   },
   {
-    "strName" : "ItmFusionReactorCore01Off",
-    "strNameShort" : "Reactor Core",
-    "strNameFriendly" : "IC Fusion Reactor Core: Sulaiman \"X(X) TW\" (Off)",
-    "strDesc" : "An Inertial Confinement Fusion Reactor. Takes fuel in the form of He3 and D2O. A functioning reactor is capable of producing an immense amount of power, and can be used as part of a \"torch drive\" for interplanetary travel.",
-    "strItemDef" : "ItmFusionReactorCore01Off",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmFusionReactorCore01Off",
+    "strNameShort": "Reactor Core",
+    "strNameFriendly": "IC Fusion Reactor Core: Sulaiman \"X(X) TW\" (Off)",
+    "strDesc": "An Inertial Confinement Fusion Reactor. Takes fuel in the form of He3 and D2O. A functioning reactor is capable of producing an immense amount of power, and can be used as part of a \"torch drive\" for interplanetary travel.",
+    "strItemDef": "ItmFusionReactorCore01Off",
+    "strType": "Item",
+    "aInteractions": [
       "GUIReactor"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
       "IsOff=1.0x1",
@@ -298,7 +301,7 @@
       "IsTechnology=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,32,-48",
       "Module01,-16,32",
       "Module02,0,32",
@@ -315,35 +318,35 @@
       "PowerOutput,-32,32",
       "PowerSource,-32,-32"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Panel A",
       "ReactorIC"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionReactorCore01Damage,StatDamageMax,1.0"
     ],
-    "strPortraitImg"  : "ItmFusionReactorCore01",
-    "aTickers" : [ 
+    "strPortraitImg": "ItmFusionReactorCore01",
+    "aTickers": [
       "Power"
     ],
-    "aStartingCondRules"  : [
+    "aStartingCondRules": [
       "DcABLWall=1"
     ],
-    "jsonPI"            : "FusionReactorCore01Off",
+    "jsonPI": "FusionReactorCore01Off",
     "strAudioEmitter": "ItmFusionReactorCore01OffSound"
   },
   {
-    "strName" : "ItmFusionReactorCore01Loose",
-    "strNameShort" : "Reactor Core",
-    "strNameFriendly" : "IC Fusion Reactor Core: Sulaiman \"X(X) TW\" (Loose)",
-    "strDesc" : "Partial housing of an inertial confinement fusion reactor core (1 of 4). A functioning reactor takes fuel in the form of He3 and D2O, and is capable of producing an immense amount of power. It can be used as part of a \"torch drive\" for interplanetary travel.",
-    "strItemDef" : "ItmFusionReactorCore01Loose",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmFusionReactorCore01Loose",
+    "strNameShort": "Reactor Core",
+    "strNameFriendly": "IC Fusion Reactor Core: Sulaiman \"X(X) TW\" (Loose)",
+    "strDesc": "Partial housing of an inertial confinement fusion reactor core (1 of 4). A functioning reactor takes fuel in the form of He3 and D2O, and is capable of producing an immense amount of power. It can be used as part of a \"torch drive\" for interplanetary travel.",
+    "strItemDef": "ItmFusionReactorCore01Loose",
+    "strType": "Item",
+    "aInteractions": [
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsOff=1.0x1",
       "IsFusionReactorCore=1.0x1",
       "IsSalvageValueHigh=1.0x1.0",
@@ -360,35 +363,36 @@
       "IsTechnology=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,0"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Panel A",
       "ReactorIC"
     ],
-    "mapSlotEffects" : [
-      "drag", "Blank"
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionReactorCore01LooseDamage,StatDamageMax,1.0"
     ],
-    "aStartingCondRules"  : [
+    "aStartingCondRules": [
       "DcABLWall=1"
     ],
-    "strPortraitImg"  : "ItmFusionReactorCore01Loose"
+    "strPortraitImg": "ItmFusionReactorCore01Loose"
   },
   {
-    "strName" : "ItmFusionReactorCore01Dmg",
-    "strNameShort" : "Reactor Core",
-    "strNameFriendly" : "IC Fusion Reactor Core: Sulaiman \"X(X) TW\" (Damaged)",
-    "strDesc" : "An Inertial Confinement Fusion Reactor. Takes fuel in the form of He3 and D2O. A functioning reactor is capable of producing an immense amount of power, and can be used as part of a \"torch drive\" for interplanetary travel.",
-    "strItemDef" : "ItmFusionReactorCore01Dmg",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmFusionReactorCore01Dmg",
+    "strNameShort": "Reactor Core",
+    "strNameFriendly": "IC Fusion Reactor Core: Sulaiman \"X(X) TW\" (Damaged)",
+    "strDesc": "An Inertial Confinement Fusion Reactor. Takes fuel in the form of He3 and D2O. A functioning reactor is capable of producing an immense amount of power, and can be used as part of a \"torch drive\" for interplanetary travel.",
+    "strItemDef": "ItmFusionReactorCore01Dmg",
+    "strType": "Item",
+    "aInteractions": [
       "GUIReactor"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsDamaged=1.0x1",
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
@@ -409,35 +413,34 @@
       "IsTechnology=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,32,-48"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Panel A",
       "ReactorIC"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionReactorCore01Destroy,StatDamageMax,1.0"
     ],
-    "aStartingCondRules"  : [
+    "aStartingCondRules": [
       "DcABLWall=1"
     ],
-    "strPortraitImg"  : "ItmFusionReactorCore01Dmg02",
-    "aTickers" : [ 
-    ]
+    "strPortraitImg": "ItmFusionReactorCore01Dmg02",
+    "aTickers": []
   },
   {
-    "strName" : "ItmFusionReactorCore01DmgLoose",
-    "strNameShort" : "Reactor Core",
-    "strNameFriendly" : "IC Fusion Reactor Core: Sulaiman \"X(X) TW\" (Loose, Damaged)",
-    "strDesc" : "Partial housing of an inertial confinement fusion reactor core (1 of 4). A functioning reactor takes fuel in the form of He3 and D2O, and is capable of producing an immense amount of power. It can be used as part of a \"torch drive\" for interplanetary travel.",
-    "strItemDef" : "ItmFusionReactorCore01DmgLoose",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmFusionReactorCore01DmgLoose",
+    "strNameShort": "Reactor Core",
+    "strNameFriendly": "IC Fusion Reactor Core: Sulaiman \"X(X) TW\" (Loose, Damaged)",
+    "strDesc": "Partial housing of an inertial confinement fusion reactor core (1 of 4). A functioning reactor takes fuel in the form of He3 and D2O, and is capable of producing an immense amount of power. It can be used as part of a \"torch drive\" for interplanetary travel.",
+    "strItemDef": "ItmFusionReactorCore01DmgLoose",
+    "strType": "Item",
+    "aInteractions": [
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsDamaged=1.0x1",
       "IsOff=1.0x1",
       "IsFusionReactorCore=1.0x1",
@@ -456,32 +459,32 @@
       "IsTechnology=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,0"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Panel A",
       "ReactorIC"
     ],
-    "mapSlotEffects" : [
-      "drag", "Blank"
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionReactorCore01LooseDestroy,StatDamageMax,1.0"
     ],
-    "strPortraitImg"  : "ItmFusionReactorCore01Dmg02Loose"
+    "strPortraitImg": "ItmFusionReactorCore01Dmg02Loose"
   },
   {
-    "strName" : "ItmFusionCorePump01Off",
-    "strNameShort" : "Core Pump",
-    "strNameFriendly" : "Sulaiman Fusion Core Pump (Off)",
-    "strItemDef" : "ItmFusionCorePump01Off",
-    "strDesc" : "A Sulaiman fusion reactor core pump. It evacuates the core chamber of a nuclear reactor of all gasses and reaction residuals to produce vacuum conditions necessary for a fusion reaction.",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmFusionCorePump01Off",
+    "strNameShort": "Core Pump",
+    "strNameFriendly": "Sulaiman Fusion Core Pump (Off)",
+    "strItemDef": "ItmFusionCorePump01Off",
+    "strDesc": "A Sulaiman fusion reactor core pump. It evacuates the core chamber of a nuclear reactor of all gasses and reaction residuals to produce vacuum conditions necessary for a fusion reaction.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
       "IsSulaiman=1.0x1",
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
@@ -503,38 +506,37 @@
       "IsCategoryFusionParts=1.0x1",
       "IsSignalable=1.0x1"
     ],
-    "mapCondTolerance"       : [
-    ],
-    "mapPoints"      : [
+    "mapCondTolerance": [],
+    "mapPoints": [
       "Power,0,-16",
       "ReactorPlug,0,-16"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Electrical"
     ],
-    "strPortraitImg"  : "ItmFusionCorePump01",
-    "aUpdateCommands" : [
+    "strPortraitImg": "ItmFusionCorePump01",
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionCorePump01Damage,StatDamageMax,1.0",
       "Electrical,Electrical"
     ],
-    "aTickers" : [ 
+    "aTickers": [
       "Power"
     ],
-    "jsonPI"            : "FusionCorePump01",
-      "strAudioEmitter"   : "ItmFusionCorePump01OffSound"
+    "jsonPI": "FusionCorePump01",
+    "strAudioEmitter": "ItmFusionCorePump01OffSound"
   },
   {
-    "strName" : "ItmFusionCorePump01Loose",
-    "strNameShort" : "Core Pump",
-    "strNameFriendly" : "Sulaiman Fusion Core Pump (Loose)",
-    "strItemDef" : "ItmFusionCorePump01Loose",
-    "strDesc" : "A Sulaiman fusion reactor core pump. It evacuates the core chamber of a nuclear reactor of all gasses and reaction residuals to produce vacuum conditions necessary for a fusion reaction.",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmFusionCorePump01Loose",
+    "strNameShort": "Core Pump",
+    "strNameFriendly": "Sulaiman Fusion Core Pump (Loose)",
+    "strItemDef": "ItmFusionCorePump01Loose",
+    "strDesc": "A Sulaiman fusion reactor core pump. It evacuates the core chamber of a nuclear reactor of all gasses and reaction residuals to produce vacuum conditions necessary for a fusion reaction.",
+    "strType": "Item",
+    "aInteractions": [
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsSulaiman=1.0x1",
       "IsOff=1.0x1",
       "IsFusionCoreModule=1.0x1",
@@ -552,29 +554,27 @@
       "IsTechnology=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapPoints"      : [
-    ],
-    "mapGUIPropMaps"  : [
-    ],
-    "aUpdateCommands" : [
+    "mapPoints": [],
+    "mapGUIPropMaps": [],
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionCorePump01LooseDamage,StatDamageMax,1.0"
     ],
-    "mapSlotEffects" : [
-      "drag", "Blank"
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
     ],
-    "strPortraitImg"  : "ItmFusionCorePump01Loose"
+    "strPortraitImg": "ItmFusionCorePump01Loose"
   },
   {
-    "strName" : "ItmFusionCorePump01",
-    "strNameShort" : "Core Pump",
-    "strNameFriendly" : "Sulaiman Fusion Core Pump ",
-    "strItemDef" : "ItmFusionCorePump01",
-    "strDesc" : "A Sulaiman fusion reactor core pump. It evacuates the core chamber of a nuclear reactor of all gasses and reaction residuals to produce vacuum conditions necessary for a fusion reaction.",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmFusionCorePump01",
+    "strNameShort": "Core Pump",
+    "strNameFriendly": "Sulaiman Fusion Core Pump ",
+    "strItemDef": "ItmFusionCorePump01",
+    "strDesc": "A Sulaiman fusion reactor core pump. It evacuates the core chamber of a nuclear reactor of all gasses and reaction residuals to produce vacuum conditions necessary for a fusion reaction.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
       "IsSulaiman=1.0x1",
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
@@ -600,40 +600,38 @@
       "IsCategoryFusionParts=1.0x1",
       "IsSignalable=1.0x1"
     ],
-    "mapCondTolerance"       : [
-    ],
-    "mapPoints"      : [
+    "mapCondTolerance": [],
+    "mapPoints": [
       "Power,0,-16",
       "ReactorPlug,0,-16"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Panel A",
       "FusionModuleGeneric",
       "Electrical"
     ],
-    "strPortraitImg"  : "ItmFusionCorePump01",
-    "aTickers" : [ 
+    "strPortraitImg": "ItmFusionCorePump01",
+    "aTickers": [
       "Power"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Heater,TIsAirtightNoHuman",
       "Destructable,StatDamage,ACTFusionCorePump01Damage,StatDamageMax,1.0",
       "Electrical,Electrical"
     ],
-    "jsonPI"            : "FusionCorePump01",
-    "strAudioEmitter"   : "ItmFusionCorePump01Sound"
+    "jsonPI": "FusionCorePump01",
+    "strAudioEmitter": "ItmFusionCorePump01Sound"
   },
   {
-    "strName" : "ItmFusionCorePump01Dmg",
-    "strNameShort" : "Core Pump",
-    "strNameFriendly" : "Sulaiman Fusion Core Pump (Damaged)",
-    "strItemDef" : "ItmFusionCorePump01Dmg",
-    "strDesc" : "A Sulaiman fusion reactor core pump. It evacuates the core chamber of a nuclear reactor of all gasses and reaction residuals to produce vacuum conditions necessary for a fusion reaction.",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmFusionCorePump01Dmg",
+    "strNameShort": "Core Pump",
+    "strNameFriendly": "Sulaiman Fusion Core Pump (Damaged)",
+    "strItemDef": "ItmFusionCorePump01Dmg",
+    "strDesc": "A Sulaiman fusion reactor core pump. It evacuates the core chamber of a nuclear reactor of all gasses and reaction residuals to produce vacuum conditions necessary for a fusion reaction.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
       "IsDamaged=1.0x1",
       "IsSulaiman=1.0x1",
       "IsHiddenInv=1.0x1",
@@ -655,33 +653,30 @@
       "IsTechnology=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapCondTolerance"       : [
-    ],
-    "mapPoints"      : [
+    "mapCondTolerance": [],
+    "mapPoints": [
       "ReactorPlug,0,-16"
     ],
-    "mapGUIPropMaps"  : [
-    ],
-    "strPortraitImg"  : "ItmFusionCorePump01Dmg02",
-    "aTickers" : [ 
-    ],
-    "aUpdateCommands" : [
+    "mapGUIPropMaps": [],
+    "strPortraitImg": "ItmFusionCorePump01Dmg02",
+    "aTickers": [],
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionCorePump01Destroy,StatDamageMax,1.0"
     ],
-    "strAudioEmitter"   : null
+    "strAudioEmitter": null
   },
   {
-    "strName" : "ItmFusionCorePump01DmgLoose",
-    "strNameShort" : "Core Pump",
-    "strNameFriendly" : "Sulaiman Fusion Core Pump (Loose, Damaged)",
-    "strItemDef" : "ItmFusionCorePump01DmgLoose",
-    "strDesc" : "A Sulaiman fusion reactor core pump. It evacuates the core chamber of a nuclear reactor of all gasses and reaction residuals to produce vacuum conditions necessary for a fusion reaction.",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmFusionCorePump01DmgLoose",
+    "strNameShort": "Core Pump",
+    "strNameFriendly": "Sulaiman Fusion Core Pump (Loose, Damaged)",
+    "strItemDef": "ItmFusionCorePump01DmgLoose",
+    "strDesc": "A Sulaiman fusion reactor core pump. It evacuates the core chamber of a nuclear reactor of all gasses and reaction residuals to produce vacuum conditions necessary for a fusion reaction.",
+    "strType": "Item",
+    "aInteractions": [
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsDamaged=1.0x1",
       "IsSulaiman=1.0x1",
       "IsOff=1.0x1",
@@ -701,29 +696,27 @@
       "IsTechnology=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapPoints"      : [
+    "mapPoints": [],
+    "mapGUIPropMaps": [],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
     ],
-    "mapGUIPropMaps"  : [
-    ],
-    "mapSlotEffects" : [
-      "drag", "Blank"
-    ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionCorePump01LooseDestroy,StatDamageMax,1.0"
     ],
-    "strPortraitImg"  : "ItmFusionCorePump01Dmg02Loose"
+    "strPortraitImg": "ItmFusionCorePump01Dmg02Loose"
   },
   {
-    "strName" : "ItmFusionCryoPump01Off",
-    "strNameShort" : "Cryo Pump",
-    "strNameFriendly" : "Cryo Distribution Pump (Off)",
-    "strItemDef" : "ItmFusionCryoPump01Off",
-    "strDesc" : "A mass market cryo distribution regulator by Sulaiman. Cools fusion core components from intense plasma temperatures by cycling a cryogenic agent (usually liquid helium) from an installed reservoir canister through an adjacent reactor core.",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmFusionCryoPump01Off",
+    "strNameShort": "Cryo Pump",
+    "strNameFriendly": "Cryo Distribution Pump (Off)",
+    "strItemDef": "ItmFusionCryoPump01Off",
+    "strDesc": "A mass market cryo distribution regulator by Sulaiman. Cools fusion core components from intense plasma temperatures by cycling a cryogenic agent (usually liquid helium) from an installed reservoir canister through an adjacent reactor core.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
       "IsNonHighlightable=1.0x1",
@@ -746,38 +739,37 @@
       "IsCategoryFusionParts=1.0x1",
       "IsSignalable=1.0x1"
     ],
-    "mapCondTolerance"       : [
-    ],
-    "mapPoints"      : [
+    "mapCondTolerance": [],
+    "mapPoints": [
       "Power,8,-16",
       "ReactorPlug,8,-16"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Electrical"
     ],
-    "strPortraitImg"  : "ItmFusionCryoPump01",
-    "aUpdateCommands" : [
+    "strPortraitImg": "ItmFusionCryoPump01",
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionCryoPump01Damage,StatDamageMax,1.0",
       "Electrical,Electrical"
     ],
-    "aTickers" : [ 
+    "aTickers": [
       "Power"
     ],
-    "jsonPI"            : "FusionCryoPump01",
-    "strAudioEmitter"   : "ItmFusionCryoPump01OffSound"
+    "jsonPI": "FusionCryoPump01",
+    "strAudioEmitter": "ItmFusionCryoPump01OffSound"
   },
   {
-    "strName" : "ItmFusionCryoPump01Loose",
-    "strNameShort" : "Cryo Pump",
-    "strNameFriendly" : "Cryo Distribution Pump (Loose)",
-    "strItemDef" : "ItmFusionCryoPump01Loose",
-    "strDesc" : "A mass market cryo distribution regulator by Sulaiman. Cools fusion core components from intense plasma temperatures by cycling a cryogenic agent (usually liquid helium) from an installed reservoir canister through an adjacent reactor core.",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmFusionCryoPump01Loose",
+    "strNameShort": "Cryo Pump",
+    "strNameFriendly": "Cryo Distribution Pump (Loose)",
+    "strItemDef": "ItmFusionCryoPump01Loose",
+    "strDesc": "A mass market cryo distribution regulator by Sulaiman. Cools fusion core components from intense plasma temperatures by cycling a cryogenic agent (usually liquid helium) from an installed reservoir canister through an adjacent reactor core.",
+    "strType": "Item",
+    "aInteractions": [
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsSulaiman=1.0x1",
       "IsOff=1.0x1",
       "IsFusionCryoPump=1.0x1",
@@ -796,29 +788,27 @@
       "IsMechanical=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapPoints"      : [
+    "mapPoints": [],
+    "mapGUIPropMaps": [],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
     ],
-    "mapGUIPropMaps"  : [
-    ],
-    "mapSlotEffects" : [
-      "drag", "Blank"
-    ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionCryoPump01LooseDamage,StatDamageMax,1.0"
     ],
-    "strPortraitImg"  : "ItmFusionCryoPump01Loose"
+    "strPortraitImg": "ItmFusionCryoPump01Loose"
   },
   {
-    "strName" : "ItmFusionCryoPump01",
-    "strNameShort" : "Cryo Pump",
-    "strNameFriendly" : "Cryo Distribution Pump",
-    "strItemDef" : "ItmFusionCryoPump01",
-    "strDesc" : "A mass market cryo distribution regulator by Sulaiman. Cools fusion core components from intense plasma temperatures by cycling a cryogenic agent (usually liquid helium) from an installed reservoir canister through an adjacent reactor core.",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmFusionCryoPump01",
+    "strNameShort": "Cryo Pump",
+    "strNameFriendly": "Cryo Distribution Pump",
+    "strItemDef": "ItmFusionCryoPump01",
+    "strDesc": "A mass market cryo distribution regulator by Sulaiman. Cools fusion core components from intense plasma temperatures by cycling a cryogenic agent (usually liquid helium) from an installed reservoir canister through an adjacent reactor core.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
       "IsSulaiman=1.0x1",
@@ -845,40 +835,38 @@
       "IsCategoryFusionParts=1.0x1",
       "IsSignalable=1.0x1"
     ],
-    "mapCondTolerance"       : [
-    ],
-    "mapPoints"      : [
+    "mapCondTolerance": [],
+    "mapPoints": [
       "Power,8,-16",
       "ReactorPlug,8,-16"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Panel A",
       "FusionModuleGeneric",
       "Electrical"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Heater,TIsAirtightNoHuman",
       "Destructable,StatDamage,ACTFusionCryoPump01Damage,StatDamageMax,1.0",
       "Electrical,Electrical"
     ],
-    "strPortraitImg"  : "ItmFusionCryoPump01",
-    "aTickers" : [ 
+    "strPortraitImg": "ItmFusionCryoPump01",
+    "aTickers": [
       "Power"
     ],
-    "jsonPI"            : "FusionCryoPump01",
-    "strAudioEmitter"   : "ItmFusionCryoPump01Sound"
+    "jsonPI": "FusionCryoPump01",
+    "strAudioEmitter": "ItmFusionCryoPump01Sound"
   },
   {
-    "strName" : "ItmFusionCryoPump01Dmg",
-    "strNameShort" : "Cryo Pump",
-    "strNameFriendly" : "Cryo Distribution Pump (Damaged)",
-    "strItemDef" : "ItmFusionCryoPump01Dmg",
-    "strDesc" : "A mass market cryo distribution regulator by Sulaiman. Cools fusion core components from intense plasma temperatures by cycling a cryogenic agent (usually liquid helium) from an installed reservoir canister through an adjacent reactor core.",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmFusionCryoPump01Dmg",
+    "strNameShort": "Cryo Pump",
+    "strNameFriendly": "Cryo Distribution Pump (Damaged)",
+    "strItemDef": "ItmFusionCryoPump01Dmg",
+    "strDesc": "A mass market cryo distribution regulator by Sulaiman. Cools fusion core components from intense plasma temperatures by cycling a cryogenic agent (usually liquid helium) from an installed reservoir canister through an adjacent reactor core.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
       "IsDamaged=1.0x1",
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
@@ -899,33 +887,30 @@
       "IsMechanical=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapCondTolerance"       : [
-    ],
-    "mapPoints"      : [
+    "mapCondTolerance": [],
+    "mapPoints": [
       "ReactorPlug,8,-16"
     ],
-    "mapGUIPropMaps"  : [
-    ],
-    "aUpdateCommands" : [
+    "mapGUIPropMaps": [],
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionCryoPump01Destroy,StatDamageMax,1.0"
     ],
-    "strPortraitImg"  : "ItmFusionCryoPump01Dmg02",
-    "aTickers" : [ 
-    ],
-    "strAudioEmitter"   : null
+    "strPortraitImg": "ItmFusionCryoPump01Dmg02",
+    "aTickers": [],
+    "strAudioEmitter": null
   },
   {
-    "strName" : "ItmFusionCryoPump01DmgLoose",
-    "strNameShort" : "Cryo Pump",
-    "strNameFriendly" : "Cryo Distribution Pump (Loose, Damaged)",
-    "strItemDef" : "ItmFusionCryoPump01DmgLoose",
-    "strDesc" : "A mass market cryo distribution regulator by Sulaiman. Cools fusion core components from intense plasma temperatures by cycling a cryogenic agent (usually liquid helium) from an installed reservoir canister through an adjacent reactor core.",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmFusionCryoPump01DmgLoose",
+    "strNameShort": "Cryo Pump",
+    "strNameFriendly": "Cryo Distribution Pump (Loose, Damaged)",
+    "strItemDef": "ItmFusionCryoPump01DmgLoose",
+    "strDesc": "A mass market cryo distribution regulator by Sulaiman. Cools fusion core components from intense plasma temperatures by cycling a cryogenic agent (usually liquid helium) from an installed reservoir canister through an adjacent reactor core.",
+    "strType": "Item",
+    "aInteractions": [
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsDamaged=1.0x1",
       "IsSulaiman=1.0x1",
       "IsOff=1.0x1",
@@ -944,28 +929,26 @@
       "IsMechanical=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapPoints"      : [
+    "mapPoints": [],
+    "mapGUIPropMaps": [],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
     ],
-    "mapGUIPropMaps"  : [
-    ],
-    "mapSlotEffects" : [
-      "drag", "Blank"
-    ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionCryoPump01LooseDestroy,StatDamageMax,1.0"
     ],
-    "strPortraitImg"  : "ItmFusionCryoPump01Dmg02Loose"
+    "strPortraitImg": "ItmFusionCryoPump01Dmg02Loose"
   },
   {
-    "strName" : "ItmFusionFieldCoils01Off",
-    "strNameShort" : "Field Coils",
-    "strNameFriendly" : "Fusion Field Coils Assembly (Off)",
-    "strItemDef" : "ItmFusionFieldCoils01",
-    "strDesc" : "Sulaiman's forward and rear field coil assemblies generate powerful magnetic fields that contain and direct fusion reaction plasma for both inertial confinement and drive thrust.\n\nWARNING: Field Coil assembly acts as sealed flooring, so uninstalling exposes ship interior to vacuum.",
-    "strType"    : "Item",
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmFusionFieldCoils01Off",
+    "strNameShort": "Field Coils",
+    "strNameFriendly": "Fusion Field Coils Assembly (Off)",
+    "strItemDef": "ItmFusionFieldCoils01",
+    "strDesc": "Sulaiman's forward and rear field coil assemblies generate powerful magnetic fields that contain and direct fusion reaction plasma for both inertial confinement and drive thrust.\n\nWARNING: Field Coil assembly acts as sealed flooring, so uninstalling exposes ship interior to vacuum.",
+    "strType": "Item",
+    "aInteractions": [],
+    "aStartingConds": [
       "IsFusionCoreModule=1.0x1",
       "IsFusionFieldCoils=1.0x1",
       "IsSulaiman=1.0x1",
@@ -988,33 +971,32 @@
       "IsTechnology=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapPoints"      : [
-        "Power,-32,-32"
-      ],
-      "mapGUIPropMaps"  : [
-        "Electrical"
-      ],
-      "aUpdateCommands" : [
-        "Destructable,StatDamage,ACTFusionFieldCoils01Damage,StatDamageMax,1.0",
-        "Electrical,Electrical"
-      ],
-      "strPortraitImg"  : "ItmFusionFieldCoils01",
-      "aTickers" : [ 
-        "Power"
-      ],
-      "jsonPI"            : "FusionFieldCoils01",
-      "strAudioEmitter"   : null
+    "mapPoints": [
+      "Power,-32,-32"
+    ],
+    "mapGUIPropMaps": [
+      "Electrical"
+    ],
+    "aUpdateCommands": [
+      "Destructable,StatDamage,ACTFusionFieldCoils01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg": "ItmFusionFieldCoils01",
+    "aTickers": [
+      "Power"
+    ],
+    "jsonPI": "FusionFieldCoils01",
+    "strAudioEmitter": null
   },
   {
-    "strName" : "ItmFusionFieldCoils01",
-    "strNameShort" : "Field Coils",
-    "strNameFriendly" : "Fusion Field Coils Assembly",
-    "strItemDef" : "ItmFusionFieldCoils01",
-    "strDesc" : "Sulaiman's forward and rear field coil assemblies generate powerful magnetic fields that contain and direct fusion reaction plasma for both inertial confinement and drive thrust.\n\nWARNING: Field Coil assembly acts as sealed flooring, so uninstalling exposes ship interior to vacuum.",
-    "strType"    : "Item",
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmFusionFieldCoils01",
+    "strNameShort": "Field Coils",
+    "strNameFriendly": "Fusion Field Coils Assembly",
+    "strItemDef": "ItmFusionFieldCoils01",
+    "strDesc": "Sulaiman's forward and rear field coil assemblies generate powerful magnetic fields that contain and direct fusion reaction plasma for both inertial confinement and drive thrust.\n\nWARNING: Field Coil assembly acts as sealed flooring, so uninstalling exposes ship interior to vacuum.",
+    "strType": "Item",
+    "aInteractions": [],
+    "aStartingConds": [
       "IsFusionCoreModule=1.0x1",
       "IsFusionFieldCoils=1.0x1",
       "IsSulaiman=1.0x1",
@@ -1041,38 +1023,38 @@
       "IsTechnology=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapPoints"      : [
-        "Power,-32,-32"
-      ],
-      "mapGUIPropMaps"  : [
-        "Panel A",
-        "FusionModuleGeneric",
-        "Electrical"
-      ],
-      "aUpdateCommands" : [
-        "Heater,TIsAirtightNoHuman",
-        "Destructable,StatDamage,ACTFusionFieldCoils01Damage,StatDamageMax,1.0",
-        "Electrical,Electrical"
-      ],
-      "strPortraitImg"  : "ItmFusionFieldCoils01",
-      "aTickers" : [ 
-        "Power"
-      ],
-      "jsonPI"            : "FusionFieldCoils01",
-      "strAudioEmitter"   : "ItmFusionFieldCoils01Sound"
+    "mapPoints": [
+      "Power,-32,-32"
+    ],
+    "mapGUIPropMaps": [
+      "Panel A",
+      "FusionModuleGeneric",
+      "Electrical"
+    ],
+    "aUpdateCommands": [
+      "Heater,TIsAirtightNoHuman",
+      "Destructable,StatDamage,ACTFusionFieldCoils01Damage,StatDamageMax,1.0",
+      "Electrical,Electrical"
+    ],
+    "strPortraitImg": "ItmFusionFieldCoils01",
+    "aTickers": [
+      "Power"
+    ],
+    "jsonPI": "FusionFieldCoils01",
+    "strAudioEmitter": "ItmFusionFieldCoils01Sound"
   },
   {
-    "strName" : "ItmFusionFieldCoils01Loose",
-    "strNameShort" : "Field Coils",
-    "strNameFriendly" : "Fusion Field Coils Assembly (Loose)",
-    "strItemDef" : "ItmFusionFieldCoils01Loose",
-    "strDesc" : "Partial field coil assembly (1 of 2). Sulaiman's forward and rear field coil assemblies generate powerful magnetic fields that contain and direct fusion reaction plasma for both inertial confinement and drive thrust.\n\nWARNING: Field Coil assembly acts as sealed flooring, so uninstalling exposes ship interior to vacuum.",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmFusionFieldCoils01Loose",
+    "strNameShort": "Field Coils",
+    "strNameFriendly": "Fusion Field Coils Assembly (Loose)",
+    "strItemDef": "ItmFusionFieldCoils01Loose",
+    "strDesc": "Partial field coil assembly (1 of 2). Sulaiman's forward and rear field coil assemblies generate powerful magnetic fields that contain and direct fusion reaction plasma for both inertial confinement and drive thrust.\n\nWARNING: Field Coil assembly acts as sealed flooring, so uninstalling exposes ship interior to vacuum.",
+    "strType": "Item",
+    "aInteractions": [
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsFusionFieldCoils=1.0x1",
       "IsFusionCoreModule=1.0x1",
       "IsSulaiman=1.0x1",
@@ -1094,26 +1076,25 @@
       "IsTechnology=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
     ],
-    "mapSlotEffects" : [
-      "drag", "Blank"
-    ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionFieldCoils01LooseDamage,StatDamageMax,1.0"
     ],
-    "strPortraitImg"  : "ItmFusionFieldCoils01Loose"
+    "strPortraitImg": "ItmFusionFieldCoils01Loose"
   },
   {
-    "strName" : "ItmFusionFieldCoils01Dmg",
-    "strNameShort" : "Field Coils",
-    "strNameFriendly" : "Fusion Field Coils Assembly (Damaged)",
-    "strItemDef" : "ItmFusionFieldCoils01Dmg",
-    "strDesc" : "Sulaiman's forward and rear field coil assemblies generate powerful magnetic fields that contain and direct fusion reaction plasma for both inertial confinement and drive thrust.\n\nWARNING: Field Coil assembly acts as sealed flooring, so uninstalling exposes ship interior to vacuum.",
-    "strType"    : "Item",
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmFusionFieldCoils01Dmg",
+    "strNameShort": "Field Coils",
+    "strNameFriendly": "Fusion Field Coils Assembly (Damaged)",
+    "strItemDef": "ItmFusionFieldCoils01Dmg",
+    "strDesc": "Sulaiman's forward and rear field coil assemblies generate powerful magnetic fields that contain and direct fusion reaction plasma for both inertial confinement and drive thrust.\n\nWARNING: Field Coil assembly acts as sealed flooring, so uninstalling exposes ship interior to vacuum.",
+    "strType": "Item",
+    "aInteractions": [],
+    "aStartingConds": [
       "IsDamaged=1.0x1",
       "IsFusionFieldCoils=1.0x1",
       "IsFusionCoreModule=1.0x1",
@@ -1138,27 +1119,26 @@
       "IsTechnology=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapPoints"      : [
-    ],
-    "aUpdateCommands" : [
+    "mapPoints": [],
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTMechDestroy,StatDamageMax,1.0"
     ],
-    "mapGUIPropMaps"  : null,
-    "strPortraitImg"  : "ItmFusionFieldCoils01Dmg02",
-    "jsonPI"            : null
+    "mapGUIPropMaps": null,
+    "strPortraitImg": "ItmFusionFieldCoils01Dmg02",
+    "jsonPI": null
   },
   {
-    "strName" : "ItmFusionFieldCoils01DmgLoose",
-    "strNameShort" : "Field Coils",
-    "strNameFriendly" : "Fusion Field Coils Assembly (Loose, Damaged)",
-    "strItemDef" : "ItmFusionFieldCoils01DmgLoose",
-    "strDesc" : "Partial field coil assembly (1 of 2). Sulaiman's forward and rear field coil assemblies generate powerful magnetic fields that contain and direct fusion reaction plasma for both inertial confinement and drive thrust.\n\nWARNING: Field Coil assembly acts as sealed flooring, so uninstalling exposes ship interior to vacuum.",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmFusionFieldCoils01DmgLoose",
+    "strNameShort": "Field Coils",
+    "strNameFriendly": "Fusion Field Coils Assembly (Loose, Damaged)",
+    "strItemDef": "ItmFusionFieldCoils01DmgLoose",
+    "strDesc": "Partial field coil assembly (1 of 2). Sulaiman's forward and rear field coil assemblies generate powerful magnetic fields that contain and direct fusion reaction plasma for both inertial confinement and drive thrust.\n\nWARNING: Field Coil assembly acts as sealed flooring, so uninstalling exposes ship interior to vacuum.",
+    "strType": "Item",
+    "aInteractions": [
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsDamaged=1.0x1",
       "IsFusionFieldCoils=1.0x1",
       "IsFusionCoreModule=1.0x1",
@@ -1181,27 +1161,26 @@
       "IsTechnology=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapPoints"      : [
+    "mapPoints": [],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
     ],
-    "mapSlotEffects" : [
-      "drag", "Blank"
-    ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTMechDestroy,StatDamageMax,1.0"
     ],
-    "strPortraitImg"  : "ItmFusionFieldCoils01Dmg02Loose"
+    "strPortraitImg": "ItmFusionFieldCoils01Dmg02Loose"
   },
   {
-    "strName" : "ItmFusionFuelRegulator01Off",
-    "strNameShort" : "Fuel Regulator",
-    "strNameFriendly" : "Reactor Fuel Regulator (Off)",
-    "strDesc" : "A Sulaiman fuel regulator assembly. It supplies a ship's pellet feeders by combining and cooling reactants D2O and He3 into a mm-scale solid pellet, used for triggering reaction within a reactor core.",
-    "strItemDef" : "ItmFusionFuelRegulator01Off",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmFusionFuelRegulator01Off",
+    "strNameShort": "Fuel Regulator",
+    "strNameFriendly": "Reactor Fuel Regulator (Off)",
+    "strDesc": "A Sulaiman fuel regulator assembly. It supplies a ship's pellet feeders by combining and cooling reactants D2O and He3 into a mm-scale solid pellet, used for triggering reaction within a reactor core.",
+    "strItemDef": "ItmFusionFuelRegulator01Off",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
       "IsNonHighlightable=1.0x1",
@@ -1223,39 +1202,38 @@
       "IsCategoryFusionParts=1.0x1",
       "IsSignalable=1.0x1"
     ],
-    "mapCondTolerance"       : [
-    ],
-    "mapPoints"      : [
+    "mapCondTolerance": [],
+    "mapPoints": [
       "use,0,16",
       "Power,0,-32",
       "ReactorPlug,0,-32"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Electrical"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionFuelRegulator01Damage,StatDamageMax,1.0",
       "Electrical,Electrical"
     ],
-    "strPortraitImg"  : "ItmFusionFuelRegulator01",
-    "aTickers" : [ 
+    "strPortraitImg": "ItmFusionFuelRegulator01",
+    "aTickers": [
       "Power"
     ],
-    "jsonPI"            : "FusionFuelRegulator01",
-    "strAudioEmitter"   : null
+    "jsonPI": "FusionFuelRegulator01",
+    "strAudioEmitter": null
   },
   {
-    "strName" : "ItmFusionFuelRegulator01Loose",
-    "strNameShort" : "Fuel Regulator",
-    "strNameFriendly" : "Reactor Fuel Regulator (Loose)",
-    "strItemDef" : "ItmFusionFuelRegulator01Loose",
-    "strDesc" : "A Sulaiman fuel regulator assembly. It supplies a ship's pellet feeders by combining and cooling reactants D2O and He3 into a mm-scale solid pellet, used for triggering reaction within a reactor core.",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmFusionFuelRegulator01Loose",
+    "strNameShort": "Fuel Regulator",
+    "strNameFriendly": "Reactor Fuel Regulator (Loose)",
+    "strItemDef": "ItmFusionFuelRegulator01Loose",
+    "strDesc": "A Sulaiman fuel regulator assembly. It supplies a ship's pellet feeders by combining and cooling reactants D2O and He3 into a mm-scale solid pellet, used for triggering reaction within a reactor core.",
+    "strType": "Item",
+    "aInteractions": [
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsSulaiman=1.0x1",
       "IsOff=1.0x1",
       "IsFusionCoreModule=1.0x1",
@@ -1273,29 +1251,27 @@
       "IsMechanical=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapPoints"      : [
+    "mapPoints": [],
+    "mapGUIPropMaps": [],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
     ],
-    "mapGUIPropMaps"  : [
-    ],
-    "mapSlotEffects" : [
-      "drag", "Blank"
-    ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionFuelRegulator01LooseDamage,StatDamageMax,1.0"
     ],
-    "strPortraitImg"  : "ItmFusionFuelRegulator01Loose"
+    "strPortraitImg": "ItmFusionFuelRegulator01Loose"
   },
   {
-    "strName" : "ItmFusionFuelRegulator01",
-    "strNameShort" : "Fuel Regulator",
-    "strNameFriendly" : "Reactor Fuel Regulator",
-    "strItemDef" : "ItmFusionFuelRegulator01",
-    "strDesc" : "A Sulaiman fuel regulator assembly. It supplies a ship's pellet feeders by combining and cooling reactants D2O and He3 into a mm-scale solid pellet, used for triggering reaction within a reactor core.",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmFusionFuelRegulator01",
+    "strNameShort": "Fuel Regulator",
+    "strNameFriendly": "Reactor Fuel Regulator",
+    "strItemDef": "ItmFusionFuelRegulator01",
+    "strDesc": "A Sulaiman fuel regulator assembly. It supplies a ship's pellet feeders by combining and cooling reactants D2O and He3 into a mm-scale solid pellet, used for triggering reaction within a reactor core.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
       "IsSulaiman=1.0x1",
@@ -1321,41 +1297,39 @@
       "IsCategoryFusionParts=1.0x1",
       "IsSignalable=1.0x1"
     ],
-    "mapCondTolerance"       : [
-    ],
-    "mapPoints"      : [
+    "mapCondTolerance": [],
+    "mapPoints": [
       "use,0,16",
       "Power,0,-32",
       "ReactorPlug,0,-32"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Panel A",
       "FusionModuleGeneric",
       "Electrical"
     ],
-    "strPortraitImg"  : "ItmFusionFuelRegulator01",
-    "aTickers" : [ 
+    "strPortraitImg": "ItmFusionFuelRegulator01",
+    "aTickers": [
       "Power"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Heater,TIsAirtightNoHuman",
       "Destructable,StatDamage,ACTFusionFuelRegulator01Damage,StatDamageMax,1.0",
       "Electrical,Electrical"
     ],
-    "jsonPI"            : "FusionFuelRegulator01",
-    "strAudioEmitter"   : null
+    "jsonPI": "FusionFuelRegulator01",
+    "strAudioEmitter": null
   },
   {
-    "strName" : "ItmFusionFuelRegulator01Dmg",
-    "strNameShort" : "Fuel Regulator",
-    "strNameFriendly" : "Reactor Fuel Regulator (Damaged)",
-    "strItemDef" : "ItmFusionFuelRegulator01Dmg",
-    "strDesc" : "A Sulaiman fuel regulator assembly. It supplies a ship's pellet feeders by combining and cooling reactants D2O and He3 into a mm-scale solid pellet, used for triggering reaction within a reactor core.",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmFusionFuelRegulator01Dmg",
+    "strNameShort": "Fuel Regulator",
+    "strNameFriendly": "Reactor Fuel Regulator (Damaged)",
+    "strItemDef": "ItmFusionFuelRegulator01Dmg",
+    "strDesc": "A Sulaiman fuel regulator assembly. It supplies a ship's pellet feeders by combining and cooling reactants D2O and He3 into a mm-scale solid pellet, used for triggering reaction within a reactor core.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
       "IsDamaged=1.0x1",
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
@@ -1377,34 +1351,31 @@
       "IsMechanical=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapCondTolerance"       : [
-    ],
-    "mapPoints"      : [
+    "mapCondTolerance": [],
+    "mapPoints": [
       "use,0,16",
       "ReactorPlug,0,-32"
     ],
-    "mapGUIPropMaps"  : [
-    ],
-    "strPortraitImg"  : "ItmFusionFuelRegulator01Dmg02",
-    "aTickers" : [ 
-    ],
-    "aUpdateCommands" : [
+    "mapGUIPropMaps": [],
+    "strPortraitImg": "ItmFusionFuelRegulator01Dmg02",
+    "aTickers": [],
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionFuelRegulator01Destroy,StatDamageMax,1.0"
     ],
-    "strAudioEmitter"   : null
+    "strAudioEmitter": null
   },
   {
-    "strName" : "ItmFusionFuelRegulator01DmgLoose",
-    "strNameShort" : "Fuel Regulator",
-    "strNameFriendly" : "Reactor Fuel Regulator (Loose, Damaged)",
-    "strItemDef" : "ItmFusionFuelRegulator01DmgLoose",
-    "strDesc" : "A Sulaiman fuel regulator assembly. It supplies a ship's pellet feeders by combining and cooling reactants D2O and He3 into a mm-scale solid pellet, used for triggering reaction within a reactor core.",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmFusionFuelRegulator01DmgLoose",
+    "strNameShort": "Fuel Regulator",
+    "strNameFriendly": "Reactor Fuel Regulator (Loose, Damaged)",
+    "strItemDef": "ItmFusionFuelRegulator01DmgLoose",
+    "strDesc": "A Sulaiman fuel regulator assembly. It supplies a ship's pellet feeders by combining and cooling reactants D2O and He3 into a mm-scale solid pellet, used for triggering reaction within a reactor core.",
+    "strType": "Item",
+    "aInteractions": [
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsDamaged=1.0x1",
       "IsSulaiman=1.0x1",
       "IsOff=1.0x1",
@@ -1424,29 +1395,27 @@
       "IsMechanical=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapPoints"      : [
+    "mapPoints": [],
+    "mapGUIPropMaps": [],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
     ],
-    "mapGUIPropMaps"  : [
-    ],
-    "mapSlotEffects" : [
-      "drag", "Blank"
-    ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionFuelRegulator01LooseDestroy,StatDamageMax,1.0"
     ],
-    "strPortraitImg"  : "ItmFusionFuelRegulator01Dmg02Loose"
+    "strPortraitImg": "ItmFusionFuelRegulator01Dmg02Loose"
   },
   {
-    "strName" : "ItmFusionLaserArray01Off",
-    "strNameShort" : "Laser Array",
-    "strNameFriendly" : "Sulaiman Fusion Laser Array (Off)",
-    "strItemDef" : "ItmFusionLaserArray01Off",
-    "strDesc" : "A Sulaiman fusion ignition laser array. Powered by a laser capacitor, this array coordinates high-energy laser alignment designed to superheat and pressurize fuel pellets into plasma to trigger a fusion reaction.",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmFusionLaserArray01Off",
+    "strNameShort": "Laser Array",
+    "strNameFriendly": "Sulaiman Fusion Laser Array (Off)",
+    "strItemDef": "ItmFusionLaserArray01Off",
+    "strDesc": "A Sulaiman fusion ignition laser array. Powered by a laser capacitor, this array coordinates high-energy laser alignment designed to superheat and pressurize fuel pellets into plasma to trigger a fusion reaction.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
       "IsSulaiman=1.0x1",
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
@@ -1469,38 +1438,37 @@
       "IsCategoryFusionParts=1.0x1",
       "IsSignalable=1.0x1"
     ],
-    "mapCondTolerance"       : [
-    ],
-    "mapPoints"      : [
+    "mapCondTolerance": [],
+    "mapPoints": [
       "Power,0,-16",
       "ReactorPlug,0,-16"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Electrical"
     ],
-    "strPortraitImg"  : "ItmFusionLaserArray01",
-    "aUpdateCommands" : [
+    "strPortraitImg": "ItmFusionLaserArray01",
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionLaserArray01Damage,StatDamageMax,1.0",
       "Electrical,Electrical"
     ],
-    "aTickers" : [ 
+    "aTickers": [
       "Power"
     ],
-    "jsonPI"            : "FusionLaserArray01",
-    "strAudioEmitter"   : null
+    "jsonPI": "FusionLaserArray01",
+    "strAudioEmitter": null
   },
   {
-    "strName" : "ItmFusionLaserArray01Loose",
-    "strNameShort" : "Laser Array",
-    "strNameFriendly" : "Sulaiman Fusion Laser Array (Loose)",
-    "strItemDef" : "ItmFusionLaserArray01Loose",
-    "strDesc" : "A Sulaiman fusion ignition laser array. Powered by a laser capacitor, this array coordinates high-energy laser alignment designed to superheat and pressurize fuel pellets into plasma to trigger a fusion reaction.",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmFusionLaserArray01Loose",
+    "strNameShort": "Laser Array",
+    "strNameFriendly": "Sulaiman Fusion Laser Array (Loose)",
+    "strItemDef": "ItmFusionLaserArray01Loose",
+    "strDesc": "A Sulaiman fusion ignition laser array. Powered by a laser capacitor, this array coordinates high-energy laser alignment designed to superheat and pressurize fuel pellets into plasma to trigger a fusion reaction.",
+    "strType": "Item",
+    "aInteractions": [
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsSulaiman=1.0x1",
       "IsOff=1.0x1",
       "IsFusionCoreModule=1.0x1",
@@ -1519,29 +1487,27 @@
       "IsTechnology=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapPoints"      : [
-    ],
-    "mapGUIPropMaps"  : [
-    ],
-    "aUpdateCommands" : [
+    "mapPoints": [],
+    "mapGUIPropMaps": [],
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionLaserArray01LooseDamage,StatDamageMax,1.0"
     ],
-    "mapSlotEffects" : [
-      "drag", "Blank"
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
     ],
-    "strPortraitImg"  : "ItmFusionLaserArray01Loose"
+    "strPortraitImg": "ItmFusionLaserArray01Loose"
   },
   {
-    "strName" : "ItmFusionLaserArray01",
-    "strNameShort" : "Laser Array",
-    "strNameFriendly" : "Sulaiman Fusion Laser Array",
-    "strItemDef" : "ItmFusionLaserArray01",
-    "strDesc" : "A Sulaiman fusion ignition laser array. Powered by a laser capacitor, this array coordinates high-energy laser alignment designed to superheat and pressurize fuel pellets into plasma to trigger a fusion reaction.",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmFusionLaserArray01",
+    "strNameShort": "Laser Array",
+    "strNameFriendly": "Sulaiman Fusion Laser Array",
+    "strItemDef": "ItmFusionLaserArray01",
+    "strDesc": "A Sulaiman fusion ignition laser array. Powered by a laser capacitor, this array coordinates high-energy laser alignment designed to superheat and pressurize fuel pellets into plasma to trigger a fusion reaction.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
       "IsSulaiman=1.0x1",
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
@@ -1556,9 +1522,9 @@
       "StatFusionLaserArrayRate=1.0x1.0",
       "StatBasePrice=1.0x5520.00",
       "StatDismantleProgressMax=1.0x150",
-      "StatHeatArea=1.0x1",
+      "StatHeatArea=1.0x0.5",
       "StatHeatVol=1.0x1.0",
-      "StatSolidTemp=1.0x1073.0",
+      "StatSolidTemp=1.0x400.0",
       "StatInstallProgressMax=1.0x1000",
       "StatUninstallProgressMax=1.0x1000",
       "StatMass=1.0x28.0",
@@ -1568,40 +1534,38 @@
       "IsCategoryFusionParts=1.0x1",
       "IsSignalable=1.0x1"
     ],
-    "mapCondTolerance"       : [
-    ],
-    "mapPoints"      : [
+    "mapCondTolerance": [],
+    "mapPoints": [
       "Power,0,-16",
       "ReactorPlug,0,-16"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Panel A",
       "FusionModuleGeneric",
       "Electrical"
     ],
-    "strPortraitImg"  : "ItmFusionLaserArray01",
-    "aTickers" : [ 
+    "strPortraitImg": "ItmFusionLaserArray01",
+    "aTickers": [
       "Power"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Heater,TIsAirtightNoHuman",
       "Destructable,StatDamage,ACTFusionLaserArray01Damage,StatDamageMax,1.0",
       "Electrical,Electrical"
     ],
-    "jsonPI"            : "FusionLaserArray01",
-    "strAudioEmitter"   : null
+    "jsonPI": "FusionLaserArray01",
+    "strAudioEmitter": null
   },
   {
-    "strName" : "ItmFusionLaserArray01Dmg",
-    "strNameShort" : "Laser Array",
-    "strNameFriendly" : "Sulaiman Fusion Laser Array (Damaged)",
-    "strItemDef" : "ItmFusionLaserArray01Dmg",
-    "strDesc" : "A Sulaiman fusion ignition laser array. Powered by a laser capacitor, this array coordinates high-energy laser alignment designed to superheat and pressurize fuel pellets into plasma to trigger a fusion reaction.",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmFusionLaserArray01Dmg",
+    "strNameShort": "Laser Array",
+    "strNameFriendly": "Sulaiman Fusion Laser Array (Damaged)",
+    "strItemDef": "ItmFusionLaserArray01Dmg",
+    "strDesc": "A Sulaiman fusion ignition laser array. Powered by a laser capacitor, this array coordinates high-energy laser alignment designed to superheat and pressurize fuel pellets into plasma to trigger a fusion reaction.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
       "IsDamaged=1.0x1",
       "IsSulaiman=1.0x1",
       "IsHiddenInv=1.0x1",
@@ -1623,33 +1587,30 @@
       "IsTechnology=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapCondTolerance"       : [
-    ],
-    "mapPoints"      : [
+    "mapCondTolerance": [],
+    "mapPoints": [
       "ReactorPlug,0,-16"
     ],
-    "mapGUIPropMaps"  : [
-    ],
-    "strPortraitImg"  : "ItmFusionLaserArray01Dmg02",
-    "aTickers" : [ 
-    ],
-    "aUpdateCommands" : [
+    "mapGUIPropMaps": [],
+    "strPortraitImg": "ItmFusionLaserArray01Dmg02",
+    "aTickers": [],
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionLaserArray01Destroy,StatDamageMax,1.0"
     ],
-    "strAudioEmitter"   : null
+    "strAudioEmitter": null
   },
   {
-    "strName" : "ItmFusionLaserArray01DmgLoose",
-    "strNameShort" : "Laser Array",
-    "strNameFriendly" : "Sulaiman Fusion Laser Array (Loose, Damaged)",
-    "strItemDef" : "ItmFusionLaserArray01DmgLoose",
-    "strDesc" : "A Sulaiman fusion ignition laser array. Powered by a laser capacitor, this array coordinates high-energy laser alignment designed to superheat and pressurize fuel pellets into plasma to trigger a fusion reaction.",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmFusionLaserArray01DmgLoose",
+    "strNameShort": "Laser Array",
+    "strNameFriendly": "Sulaiman Fusion Laser Array (Loose, Damaged)",
+    "strItemDef": "ItmFusionLaserArray01DmgLoose",
+    "strDesc": "A Sulaiman fusion ignition laser array. Powered by a laser capacitor, this array coordinates high-energy laser alignment designed to superheat and pressurize fuel pellets into plasma to trigger a fusion reaction.",
+    "strType": "Item",
+    "aInteractions": [
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsDamaged=1.0x1",
       "IsSulaiman=1.0x1",
       "IsOff=1.0x1",
@@ -1669,29 +1630,27 @@
       "IsTechnology=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapPoints"      : [
+    "mapPoints": [],
+    "mapGUIPropMaps": [],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
     ],
-    "mapGUIPropMaps"  : [
-    ],
-    "mapSlotEffects" : [
-      "drag", "Blank"
-    ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionLaserArray01LooseDestroy,StatDamageMax,1.0"
     ],
-    "strPortraitImg"  : "ItmFusionLaserArray01Dmg02Loose"
+    "strPortraitImg": "ItmFusionLaserArray01Dmg02Loose"
   },
   {
-    "strName" : "ItmFusionMHDGenerator01",
-    "strNameShort" : "MHD Generator",
-    "strNameFriendly" : "Magnetohydrodynamic (MHD) Generator",
-    "strDesc" : "A magnetohydrodynamic generator by Sulaiman. It employs magnets along the path of the reactor's plasma flow and exhaust cycle to produce conventional power generation.",
-    "strItemDef" : "ItmFusionMHDGenerator01",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmFusionMHDGenerator01",
+    "strNameShort": "MHD Generator",
+    "strNameFriendly": "Magnetohydrodynamic (MHD) Generator",
+    "strDesc": "A magnetohydrodynamic generator by Sulaiman. It employs magnets along the path of the reactor's plasma flow and exhaust cycle to produce conventional power generation.",
+    "strItemDef": "ItmFusionMHDGenerator01",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
       "IsSulaiman=1.0x1",
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
@@ -1712,38 +1671,36 @@
       "IsElectronic=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapCondTolerance"       : [
-    ],
-    "mapPoints"      : [
+    "mapCondTolerance": [],
+    "mapPoints": [
       "use,0,0",
       "PowerSource,-16,-16",
       "ReactorPlug,-16,-16"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionMHDGenerator01Damage,StatDamageMax,1.0"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Panel A",
       "MeterBattery"
     ],
-    "aTickers" : [ 
+    "aTickers": [
       "Power"
     ],
-    "strPortraitImg"  : "ItmFusionMHDGenerator01",
-    "jsonPI"            : "FusionMHDGenerator01",
+    "strPortraitImg": "ItmFusionMHDGenerator01",
+    "jsonPI": "FusionMHDGenerator01",
     "strAudioEmitter": "ItmBattery02Sound"
   },
   {
-    "strName" : "ItmFusionMHDGenerator01Dmg",
-    "strNameShort" : "MHD Generator",
-    "strNameFriendly" : "Magnetohydrodynamic (MHD) Generator (Damaged)",
-    "strDesc" : "A magnetohydrodynamic generator by Sulaiman. It employs magnets along the path of the reactor's plasma flow and exhaust cycle to produce conventional power generation.",
-    "strItemDef" : "ItmFusionMHDGenerator01Dmg",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmFusionMHDGenerator01Dmg",
+    "strNameShort": "MHD Generator",
+    "strNameFriendly": "Magnetohydrodynamic (MHD) Generator (Damaged)",
+    "strDesc": "A magnetohydrodynamic generator by Sulaiman. It employs magnets along the path of the reactor's plasma flow and exhaust cycle to produce conventional power generation.",
+    "strItemDef": "ItmFusionMHDGenerator01Dmg",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
       "IsSulaiman=1.0x1",
       "IsDamaged=1.0x1",
       "IsHiddenInv=1.0x1",
@@ -1762,31 +1719,29 @@
       "IsElectronic=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapCondTolerance"       : [
-    ],
-    "mapPoints"      : [
+    "mapCondTolerance": [],
+    "mapPoints": [
       "use,0,0",
       "ReactorPlug,-16,-16"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionMHDGenerator01Destroy,StatDamageMax,1.0"
     ],
-    "mapGUIPropMaps"  : [
-    ],
-    "strPortraitImg"  : "ItmFusionMHDGenerator01Dmg02"
+    "mapGUIPropMaps": [],
+    "strPortraitImg": "ItmFusionMHDGenerator01Dmg02"
   },
   {
-    "strName" : "ItmFusionMHDGenerator01Loose",
-    "strNameShort" : "MHD Generator",
-    "strNameFriendly" : "Magnetohydrodynamic (MHD) Generator (Loose)",
-    "strDesc" : "A magnetohydrodynamic generator by Sulaiman. It employs magnets along the path of the reactor's plasma flow and exhaust cycle to produce conventional power generation.",
-    "strItemDef" : "ItmFusionMHDGenerator01Loose",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmFusionMHDGenerator01Loose",
+    "strNameShort": "MHD Generator",
+    "strNameFriendly": "Magnetohydrodynamic (MHD) Generator (Loose)",
+    "strDesc": "A magnetohydrodynamic generator by Sulaiman. It employs magnets along the path of the reactor's plasma flow and exhaust cycle to produce conventional power generation.",
+    "strItemDef": "ItmFusionMHDGenerator01Loose",
+    "strType": "Item",
+    "aInteractions": [
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsSulaiman=1.0x1",
       "IsFusionCoreModule=1.0x1",
       "IsFusionMHDGenerator=1.0x1",
@@ -1803,33 +1758,33 @@
       "IsElectronic=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionMHDGenerator01LooseDamage,StatDamageMax,1.0"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,-24"
     ],
-    "mapSlotEffects" : [
-      "drag", "Blank"
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Panel A",
       "MeterBattery"
     ],
-    "strPortraitImg"  : "ItmFusionMHDGenerator01Loose",
-    "jsonPI"            : "FusionMHDGenerator01Loose"
+    "strPortraitImg": "ItmFusionMHDGenerator01Loose",
+    "jsonPI": "FusionMHDGenerator01Loose"
   },
   {
-    "strName" : "ItmFusionMHDGenerator01Off",
-    "strNameShort" : "MHD Generator",
-    "strNameFriendly" : "Magnetohydrodynamic (MHD) Generator (Off)",
-    "strDesc" : "A magnetohydrodynamic generator by Sulaiman. It employs magnets along the path of the reactor's plasma flow and exhaust cycle to produce conventional power generation.",
-    "strItemDef" : "ItmFusionMHDGenerator01Off",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmFusionMHDGenerator01Off",
+    "strNameShort": "MHD Generator",
+    "strNameFriendly": "Magnetohydrodynamic (MHD) Generator (Off)",
+    "strDesc": "A magnetohydrodynamic generator by Sulaiman. It employs magnets along the path of the reactor's plasma flow and exhaust cycle to produce conventional power generation.",
+    "strItemDef": "ItmFusionMHDGenerator01Off",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
       "IsSulaiman=1.0x1",
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
@@ -1850,39 +1805,38 @@
       "IsElectronic=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapCondTolerance"       : [
-    ],
-    "mapPoints"      : [
+    "mapCondTolerance": [],
+    "mapPoints": [
       "use,0,0",
       "PowerSource,-16,-16",
       "ReactorPlug,-16,-16"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionMHDGenerator01Damage,StatDamageMax,1.0"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Panel A",
       "MeterBattery"
     ],
-    "aTickers" : [ 
+    "aTickers": [
       "Power"
     ],
-    "strPortraitImg"  : "ItmFusionMHDGenerator01",
-    "jsonPI"            : "FusionMHDGenerator01",
+    "strPortraitImg": "ItmFusionMHDGenerator01",
+    "jsonPI": "FusionMHDGenerator01",
     "strAudioEmitter": null
   },
   {
-    "strName" : "ItmFusionMHDGenerator01DmgLoose",
-    "strNameShort" : "MHD Generator",
-    "strNameFriendly" : "Magnetohydrodynamic (MHD) Generator (Loose, Damaged)",
-    "strDesc" : "A magnetohydrodynamic generator by Sulaiman. It employs magnets along the path of the reactor's plasma flow and exhaust cycle to produce conventional power generation.",
-    "strItemDef" : "ItmFusionMHDGenerator01DmgLoose",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmFusionMHDGenerator01DmgLoose",
+    "strNameShort": "MHD Generator",
+    "strNameFriendly": "Magnetohydrodynamic (MHD) Generator (Loose, Damaged)",
+    "strDesc": "A magnetohydrodynamic generator by Sulaiman. It employs magnets along the path of the reactor's plasma flow and exhaust cycle to produce conventional power generation.",
+    "strItemDef": "ItmFusionMHDGenerator01DmgLoose",
+    "strType": "Item",
+    "aInteractions": [
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsFusionCoreModule=1.0x1",
       "IsFusionMHDGenerator=1.0x1",
       "IsDamaged=1.0x1",
@@ -1900,32 +1854,29 @@
       "IsElectronic=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionMHDGenerator01LooseDestroy,StatDamageMax,1.0"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,0,-24"
     ],
-    "mapSlotEffects" : [
-      "drag", "Blank"
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
     ],
-    "mapGUIPropMaps"  : [
-    ],
-    "strPortraitImg"  : "ItmFusionMHDGenerator01Dmg02Loose"
+    "mapGUIPropMaps": [],
+    "strPortraitImg": "ItmFusionMHDGenerator01Dmg02Loose"
   },
-  
-  
   {
-    "strName" : "ItmCapacitor01",
-    "strNameShort" : "Capacitor",
-    "strNameFriendly" : "Fusion-grade Laser Capacitor",
-    "strDesc" : "A mass market, industrial-grade capacitor from Collective Electric. When connected to a power source, it gathers charge to power adjacent high-energy equipment such as laser arrays.",
-    "strItemDef" : "ItmCapacitor01",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmCapacitor01",
+    "strNameShort": "Capacitor",
+    "strNameFriendly": "Fusion-grade Laser Capacitor",
+    "strDesc": "A mass market, industrial-grade capacitor from Collective Electric. When connected to a power source, it gathers charge to power adjacent high-energy equipment such as laser arrays.",
+    "strItemDef": "ItmCapacitor01",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
       "IsFusionCoreModule=1.0x1",
@@ -1944,35 +1895,33 @@
       "IsPowerObservable=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapCondTolerance"       : [
-    ],
-    "mapPoints"      : [
+    "mapCondTolerance": [],
+    "mapPoints": [
       "use,0,0",
       "PowerSource,-8,-32",
       "ReactorPlug,-8,-32"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTCapacitor01Damage,StatDamageMax,1.0"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Panel A",
       "MeterBattery"
     ],
-    "strPortraitImg"  : "ItmCapacitor01",
-    "jsonPI"            : "Capacitor01",
+    "strPortraitImg": "ItmCapacitor01",
+    "jsonPI": "Capacitor01",
     "strAudioEmitter": "ItmBattery02Sound"
   },
   {
-    "strName" : "ItmCapacitor01Dmg",
-    "strNameShort" : "Capacitor",
-    "strNameFriendly" : "Fusion-grade Laser Capacitor (Damaged)",
-    "strDesc" : "A mass market, industrial-grade capacitor from Collective Electric. When connected to a power source, it gathers charge to power adjacent high-energy equipment such as laser arrays.",
-    "strItemDef" : "ItmCapacitor01Dmg",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmCapacitor01Dmg",
+    "strNameShort": "Capacitor",
+    "strNameFriendly": "Fusion-grade Laser Capacitor (Damaged)",
+    "strDesc": "A mass market, industrial-grade capacitor from Collective Electric. When connected to a power source, it gathers charge to power adjacent high-energy equipment such as laser arrays.",
+    "strItemDef": "ItmCapacitor01Dmg",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
       "IsDamaged=1.0x1",
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
@@ -1991,31 +1940,29 @@
       "IsElectronic=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapCondTolerance"       : [
-    ],
-    "mapPoints"      : [
+    "mapCondTolerance": [],
+    "mapPoints": [
       "use,0,0",
       "ReactorPlug,-8,-32"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTCapacitor01Destroy,StatDamageMax,1.0"
     ],
-    "mapGUIPropMaps"  : [
-    ],
-    "strPortraitImg"  : "ItmCapacitor01Dmg02"
+    "mapGUIPropMaps": [],
+    "strPortraitImg": "ItmCapacitor01Dmg02"
   },
   {
-    "strName" : "ItmCapacitor01Loose",
-    "strNameShort" : "Capacitor",
-    "strNameFriendly" : "Fusion-grade Laser Capacitor (Loose)",
-    "strDesc" : "A mass market, industrial-grade capacitor from Collective Electric. When connected to a power source, it gathers charge to power adjacent high-energy equipment such as laser arrays.",
-    "strItemDef" : "ItmCapacitor01Loose",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmCapacitor01Loose",
+    "strNameShort": "Capacitor",
+    "strNameFriendly": "Fusion-grade Laser Capacitor (Loose)",
+    "strDesc": "A mass market, industrial-grade capacitor from Collective Electric. When connected to a power source, it gathers charge to power adjacent high-energy equipment such as laser arrays.",
+    "strItemDef": "ItmCapacitor01Loose",
+    "strType": "Item",
+    "aInteractions": [
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsFusionCoreModule=1.0x1",
       "IsFusionCapacitor=1.0x1",
       "IsSalvageValueHigh=1.0x1.0",
@@ -2032,34 +1979,35 @@
       "IsElectronic=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTCapacitor01LooseDamage,StatDamageMax,1.0"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,24,0"
     ],
-    "mapSlotEffects" : [
-      "drag", "Blank"
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Panel A",
       "MeterBattery"
     ],
-    "strPortraitImg"  : "ItmCapacitor01Loose",
-    "jsonPI"            : "Capacitor01Loose"
+    "strPortraitImg": "ItmCapacitor01Loose",
+    "jsonPI": "Capacitor01Loose"
   },
   {
-    "strName" : "ItmCapacitor01DmgLoose",
-    "strNameShort" : "Capacitor",
-    "strNameFriendly" : "Fusion-grade Laser Capacitor (Loose, Damaged)",
-    "strDesc" : "A mass market, industrial-grade capacitor from Collective Electric. When connected to a power source, it gathers charge to power adjacent high-energy equipment such as laser arrays.",
-    "strItemDef" : "ItmCapacitor01DmgLoose",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmCapacitor01DmgLoose",
+    "strNameShort": "Capacitor",
+    "strNameFriendly": "Fusion-grade Laser Capacitor (Loose, Damaged)",
+    "strDesc": "A mass market, industrial-grade capacitor from Collective Electric. When connected to a power source, it gathers charge to power adjacent high-energy equipment such as laser arrays.",
+    "strItemDef": "ItmCapacitor01DmgLoose",
+    "strType": "Item",
+    "aInteractions": [
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsFusionCoreModule=1.0x1",
       "IsFusionCapacitor=1.0x1",
       "IsDamaged=1.0x1",
@@ -2078,30 +2026,29 @@
       "IsElectronic=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTCapacitor01LooseDestroy,StatDamageMax,1.0"
     ],
-    "mapPoints"      : [
+    "mapPoints": [
       "use,24,0"
     ],
-    "mapSlotEffects" : [
-      "drag", "Blank"
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
     ],
-    "mapGUIPropMaps"  : [
-    ],
-    "strPortraitImg"  : "ItmCapacitor01Dmg02Loose"
+    "mapGUIPropMaps": [],
+    "strPortraitImg": "ItmCapacitor01Dmg02Loose"
   },
   {
-    "strName" : "ItmFusionPelletFeeder01Off",
-    "strNameShort" : "Pellet Feeder",
-    "strNameFriendly" : "Sulaiman Pellet Feeder Assembly (Off)",
-    "strItemDef" : "ItmFusionPelletFeeder01Off",
-    "strDesc" : "A Sulaiman pellet feeder assembly. In conjunction with a ship's fuel regulator or pellet supply, it propels mm-scale solid reactant pellets into position within the core for lasers to superheat into plasma and trigger a fusion reaction.",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmFusionPelletFeeder01Off",
+    "strNameShort": "Pellet Feeder",
+    "strNameFriendly": "Sulaiman Pellet Feeder Assembly (Off)",
+    "strItemDef": "ItmFusionPelletFeeder01Off",
+    "strDesc": "A Sulaiman pellet feeder assembly. In conjunction with a ship's fuel regulator or pellet supply, it propels mm-scale solid reactant pellets into position within the core for lasers to superheat into plasma and trigger a fusion reaction.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
       "IsSulaiman=1.0x1",
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
@@ -2124,38 +2071,37 @@
       "IsCategoryFusionParts=1.0x1",
       "IsSignalable=1.0x1"
     ],
-    "mapCondTolerance"       : [
-    ],
-    "mapPoints"      : [
+    "mapCondTolerance": [],
+    "mapPoints": [
       "Power,0,-16",
       "ReactorPlug,0,-16"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Electrical"
     ],
-    "strPortraitImg"  : "ItmFusionPelletFeeder01",
-    "aUpdateCommands" : [
+    "strPortraitImg": "ItmFusionPelletFeeder01",
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionPelletFeeder01Damage,StatDamageMax,1.0",
       "Electrical,Electrical"
     ],
-    "aTickers" : [ 
+    "aTickers": [
       "Power"
     ],
-    "jsonPI"            : "FusionPelletFeeder01",
-    "strAudioEmitter"   : "ItmFusionFuelRegulator01OffSound"
+    "jsonPI": "FusionPelletFeeder01",
+    "strAudioEmitter": "ItmFusionFuelRegulator01OffSound"
   },
   {
-    "strName" : "ItmFusionPelletFeeder01Loose",
-    "strNameShort" : "Pellet Feeder",
-    "strNameFriendly" : "Sulaiman Pellet Feeder Assembly (Loose)",
-    "strItemDef" : "ItmFusionPelletFeeder01Loose",
-    "strDesc" : "A Sulaiman pellet feeder assembly. In conjunction with a ship's fuel regulator or pellet supply, it propels mm-scale solid reactant pellets into position within the core for lasers to superheat into plasma and trigger a fusion reaction.",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmFusionPelletFeeder01Loose",
+    "strNameShort": "Pellet Feeder",
+    "strNameFriendly": "Sulaiman Pellet Feeder Assembly (Loose)",
+    "strItemDef": "ItmFusionPelletFeeder01Loose",
+    "strDesc": "A Sulaiman pellet feeder assembly. In conjunction with a ship's fuel regulator or pellet supply, it propels mm-scale solid reactant pellets into position within the core for lasers to superheat into plasma and trigger a fusion reaction.",
+    "strType": "Item",
+    "aInteractions": [
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsSulaiman=1.0x1",
       "IsOff=1.0x1",
       "IsFusionCoreModule=1.0x1",
@@ -2174,29 +2120,27 @@
       "IsMechanical=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapPoints"      : [
-    ],
-    "mapGUIPropMaps"  : [
-    ],
-    "aUpdateCommands" : [
+    "mapPoints": [],
+    "mapGUIPropMaps": [],
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionPelletFeeder01LooseDamage,StatDamageMax,1.0"
     ],
-    "mapSlotEffects" : [
-      "drag", "Blank"
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
     ],
-    "strPortraitImg"  : "ItmFusionPelletFeeder01Loose"
+    "strPortraitImg": "ItmFusionPelletFeeder01Loose"
   },
   {
-    "strName" : "ItmFusionPelletFeeder01",
-    "strNameShort" : "Pellet Feeder",
-    "strNameFriendly" : "Sulaiman Pellet Feeder Assembly",
-    "strItemDef" : "ItmFusionPelletFeeder01",
-    "strDesc" : "A Sulaiman pellet feeder assembly. In conjunction with a ship's fuel regulator or pellet supply, it propels mm-scale solid reactant pellets into position within the core for lasers to superheat into plasma and trigger a fusion reaction.",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmFusionPelletFeeder01",
+    "strNameShort": "Pellet Feeder",
+    "strNameFriendly": "Sulaiman Pellet Feeder Assembly",
+    "strItemDef": "ItmFusionPelletFeeder01",
+    "strDesc": "A Sulaiman pellet feeder assembly. In conjunction with a ship's fuel regulator or pellet supply, it propels mm-scale solid reactant pellets into position within the core for lasers to superheat into plasma and trigger a fusion reaction.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
       "IsSulaiman=1.0x1",
       "IsHiddenInv=1.0x1",
       "IsInstalled=1.0x1",
@@ -2223,40 +2167,38 @@
       "IsCategoryFusionParts=1.0x1",
       "IsSignalable=1.0x1"
     ],
-    "mapCondTolerance"       : [
-    ],
-    "mapPoints"      : [
+    "mapCondTolerance": [],
+    "mapPoints": [
       "Power,0,-16",
       "ReactorPlug,0,-16"
     ],
-    "mapGUIPropMaps"  : [
+    "mapGUIPropMaps": [
       "Panel A",
       "FusionModuleGeneric",
       "Electrical"
     ],
-    "strPortraitImg"  : "ItmFusionPelletFeeder01",
-    "aTickers" : [ 
+    "strPortraitImg": "ItmFusionPelletFeeder01",
+    "aTickers": [
       "Power"
     ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Heater,TIsAirtightNoHuman",
       "Destructable,StatDamage,ACTFusionPelletFeeder01Damage,StatDamageMax,1.0",
       "Electrical,Electrical"
     ],
-    "jsonPI"            : "FusionPelletFeeder01",
-    "strAudioEmitter"   : "ItmFusionFuelRegulator01Sound"
+    "jsonPI": "FusionPelletFeeder01",
+    "strAudioEmitter": "ItmFusionFuelRegulator01Sound"
   },
   {
-    "strName" : "ItmFusionPelletFeeder01Dmg",
-    "strNameShort" : "Pellet Feeder",
-    "strNameFriendly" : "Sulaiman Pellet Feeder Assembly (Damaged)",
-    "strItemDef" : "ItmFusionPelletFeeder01Dmg",
-    "strDesc" : "A Sulaiman pellet feeder assembly. In conjunction with a ship's fuel regulator or pellet supply, it propels mm-scale solid reactant pellets into position within the core for lasers to superheat into plasma and trigger a fusion reaction.",
-    "strType"    : "Item",
-    "strLoot"    : null,
-    "aInteractions" : [
-    ],
-    "aStartingConds" : [
+    "strName": "ItmFusionPelletFeeder01Dmg",
+    "strNameShort": "Pellet Feeder",
+    "strNameFriendly": "Sulaiman Pellet Feeder Assembly (Damaged)",
+    "strItemDef": "ItmFusionPelletFeeder01Dmg",
+    "strDesc": "A Sulaiman pellet feeder assembly. In conjunction with a ship's fuel regulator or pellet supply, it propels mm-scale solid reactant pellets into position within the core for lasers to superheat into plasma and trigger a fusion reaction.",
+    "strType": "Item",
+    "strLoot": null,
+    "aInteractions": [],
+    "aStartingConds": [
       "IsDamaged=1.0x1",
       "IsSulaiman=1.0x1",
       "IsHiddenInv=1.0x1",
@@ -2278,33 +2220,30 @@
       "IsMechanical=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapCondTolerance"       : [
-    ],
-    "mapPoints"      : [
+    "mapCondTolerance": [],
+    "mapPoints": [
       "ReactorPlug,0,-16"
     ],
-    "mapGUIPropMaps"  : [
-    ],
-    "strPortraitImg"  : "ItmFusionPelletFeeder01Dmg02",
-    "aTickers" : [ 
-    ],
-    "aUpdateCommands" : [
+    "mapGUIPropMaps": [],
+    "strPortraitImg": "ItmFusionPelletFeeder01Dmg02",
+    "aTickers": [],
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionPelletFeeder01Destroy,StatDamageMax,1.0"
     ],
-    "strAudioEmitter"   : null
+    "strAudioEmitter": null
   },
   {
-    "strName" : "ItmFusionPelletFeeder01DmgLoose",
-    "strNameShort" : "Pellet Feeder",
-    "strNameFriendly" : "Sulaiman Pellet Feeder Assembly (Loose, Damaged)",
-    "strItemDef" : "ItmFusionPelletFeeder01DmgLoose",
-    "strDesc" : "A Sulaiman pellet feeder assembly. In conjunction with a ship's fuel regulator or pellet supply, it propels mm-scale solid reactant pellets into position within the core for lasers to superheat into plasma and trigger a fusion reaction.",
-    "strType"    : "Item",
-    "aInteractions" : [
+    "strName": "ItmFusionPelletFeeder01DmgLoose",
+    "strNameShort": "Pellet Feeder",
+    "strNameFriendly": "Sulaiman Pellet Feeder Assembly (Loose, Damaged)",
+    "strItemDef": "ItmFusionPelletFeeder01DmgLoose",
+    "strDesc": "A Sulaiman pellet feeder assembly. In conjunction with a ship's fuel regulator or pellet supply, it propels mm-scale solid reactant pellets into position within the core for lasers to superheat into plasma and trigger a fusion reaction.",
+    "strType": "Item",
+    "aInteractions": [
       "DropItem",
       "PickupItem"
     ],
-    "aStartingConds" : [
+    "aStartingConds": [
       "IsDamaged=1.0x1",
       "IsSulaiman=1.0x1",
       "IsOff=1.0x1",
@@ -2324,16 +2263,15 @@
       "IsMechanical=1.0x1",
       "IsCategoryFusionParts=1.0x1"
     ],
-    "mapPoints"      : [
+    "mapPoints": [],
+    "mapGUIPropMaps": [],
+    "mapSlotEffects": [
+      "drag",
+      "Blank"
     ],
-    "mapGUIPropMaps"  : [
-    ],
-    "mapSlotEffects" : [
-      "drag", "Blank"
-    ],
-    "aUpdateCommands" : [
+    "aUpdateCommands": [
       "Destructable,StatDamage,ACTFusionPelletFeeder01LooseDestroy,StatDamageMax,1.0"
     ],
-    "strPortraitImg"  : "ItmFusionPelletFeeder01Dmg02Loose"
+    "strPortraitImg": "ItmFusionPelletFeeder01Dmg02Loose"
   }
 ]
