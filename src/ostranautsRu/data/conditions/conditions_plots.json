@@ -1524,7 +1524,7 @@
     "strName": "IsAttractedMen",
     "strNameFriendly": "Attracted to Men",
     "strColor": "Neutral",
-    "strDesc": "[us] [is] attracted to men.",
+    "strDesc": "[us] [is] влечение к мужчинам.",
     "bResetTimer": false,
     "nDisplaySelf": 2,
     "nDisplayOther": 1,
